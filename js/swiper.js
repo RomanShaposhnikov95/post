@@ -21,7 +21,7 @@
             400: {
                 slidesPerView: "2",
             },
-            5: {
+            500: {
                 slidesPerView: "auto",
             },
             1300: {
