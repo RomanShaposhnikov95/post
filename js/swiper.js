@@ -17,15 +17,14 @@
             280: {
                 slidesPerView: 1,
             },
-
             400: {
-                slidesPerView: "2",
+                slidesPerView: 2,
             },
             500: {
                 slidesPerView: "auto",
             },
-            1300: {
-                slidesPerView: "4",
+            1600: {
+                slidesPerView: 4,
             },
         },
         on: {
