@@ -1,0 +1,16 @@
+.info {
+  background-color: #EEEFF1;
+  padding: 70px 0;
+
+  .title-m-light {
+    max-width: 530px;
+  }
+
+  &-descr {
+    color: #6E7077;
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    line-height: 26px;
+    margin-top: 14px;
+  }
+}

@@ -1,0 +1,31 @@
+.accordion {
+  margin-top: 40px;
+  &-item {
+    margin-top: 4px;
+    outline: none;
+    &:first-of-type, &:last-of-type  {
+      border-radius: unset;
+
+      .accordion-button {
+        border-radius: unset;
+      }
+    }
+  }
+
+  &-button {
+    background-color: #EEEFF1;
+    color: #0F0F0F;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    line-height: 26px;
+    padding: 24px 30px;
+    &:not(.collapsed) {
+      background-color: #8CD9CC;
+    }
+
+    &:after {
+      background-image: url("../assets/icons/ic-faq-arrow.svg");
+    }
+  }
+}

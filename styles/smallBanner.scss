@@ -1,0 +1,57 @@
+.smallBanner {
+  margin-top: 80px;
+  &-wrap {
+    background-color: #F2590D;
+    padding: 93px 100px;
+
+    &-content {
+      max-width: 650px;
+      &-title {
+        color: #FFFFFF;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: -0.8px;
+        line-height: 50px;
+
+        span {
+          color: #6DD400;
+          background-color: #0F0F0F;
+          padding: 0 2px;
+        }
+      }
+
+      .btn {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 650px) {
+  .smallBanner {
+    &-wrap {
+      padding: 50px;
+
+      &-content {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .smallBanner {
+    &-wrap {
+
+      &-content {
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.accordion-button {
+  background-color: green;
+}
+.accordion-button:not(.collapsed) {
+  background-color: green;
+}
+
+/*# sourceMappingURL=accordion.css.map */
