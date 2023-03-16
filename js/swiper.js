@@ -2,10 +2,10 @@
     let swiper = new Swiper(".mySwiperSmall", {
         spaceBetween: 10,
         slidesPerView: "auto",
-        allowTouchMove: false,
         loop: true,
         pagination: false,
         speed: 100,
+        slideToClickedSlide: true,
         navigation: {
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",

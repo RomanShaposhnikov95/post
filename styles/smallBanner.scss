@@ -1,11 +1,18 @@
 .smallBanner {
   margin-top: 80px;
   &-wrap {
-    background-color: #F2590D;
+    background-image: url("../assets/img/image@2x.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     padding: 93px 100px;
+    position: relative;
+    overflow: hidden;
 
     &-content {
       max-width: 650px;
+      position: relative;
+      z-index: 4;
       &-title {
         color: #FFFFFF;
         font-size: 40px;
@@ -23,6 +30,12 @@
       .btn {
         margin-top: 40px;
       }
+    }
+
+    .vector {
+      position: absolute;
+      top: -162px;
+      right: -151px;
     }
   }
 }

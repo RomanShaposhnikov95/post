@@ -27,5 +27,13 @@
     &:after {
       background-image: url("../assets/icons/ic-faq-arrow.svg");
     }
+
+    &:hover {
+      background-color: #E6E6E6;
+    }
+
+    &:focus {
+      box-shadow: unset;
+    }
   }
 }

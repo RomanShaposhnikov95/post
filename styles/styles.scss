@@ -45,8 +45,11 @@ ul {
   border: none;
   border-radius: unset;
   display: block;
+  cursor: pointer;
+  transition: all 0.3s;
 
   &:after {
+    transition: all 0.3s;
     content: "";
     position: absolute;
     top: 50%;
@@ -65,10 +68,34 @@ ul {
   &:after {
     background-color: #8CD9CC;
   }
+
+  &:hover {
+    background-color: #28292F;
+  }
 }
 
 .btn-white {
   background-color: white;
+
+  &:hover {
+    background-color: rgba(255,255,255,0.9);
+  }
+}
+
+.btn {
+  &:hover {
+    background: #88F316;
+  }
+}
+
+.btn-hover {
+  &:hover {
+    padding-right: 70px;
+
+    &:after {
+      width: 40px;
+    }
+  }
 }
 
 
@@ -80,14 +107,28 @@ ul {
   font-weight: 500;
   letter-spacing: -0.4px;
   line-height: 21px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   border: none;
   background-color: transparent;
   padding: 0;
+  transition: all 0.3s;
 
   svg {
+    transition: all 0.3s;
     margin-left: 8px;
+  }
+
+  &:hover {
+    color: #6DD400;
+
+    svg {
+      margin-left: 18px;
+
+       * {
+        fill: #6DD400;
+      }
+    }
   }
 }
 
@@ -202,7 +243,7 @@ ul {
 
             max-width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
           }
 
           svg {

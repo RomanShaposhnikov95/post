@@ -10,23 +10,38 @@
         margin-top: 40px;
         max-width: 530px;
         padding-left: 17px;
-        list-style-image: url("../assets/icons/list-item-arrow-black.svg");
 
-        li {
+        button {
           color: #05051A;
           font-size: 21px;
           font-weight: 500;
           letter-spacing: -0.4px;
           line-height: 30px;
           margin-top: 20px;
-          padding-left: 13px;
+          border: none;
+          padding: 0 0 0 30px;
+          position: relative;
 
-          &:first-child {
-            margin-top: 0;
-            color: #6DD400;
-            list-style-image: url("../assets/icons/list-item-arrow.svg");
+
+          &:after {
+            content: url("../assets/icons/list-item-arrow-black.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
           }
         }
+
+        .active {
+          color: #6DD400;
+          &:after {
+            content: url("../assets/icons/list-item-arrow.svg");
+            position: absolute;
+          }
+        }
+      }
+
+      .nav {
+        display: unset;
       }
     }
   }
@@ -87,9 +102,6 @@
           display: flex;
           align-items: center;
 
-          svg {
-            margin-right: 8px;
-          }
 
           &-link {
             color: #0F0F0F;
@@ -97,6 +109,14 @@
             font-weight: 500;
             letter-spacing: -0.4px;
             line-height: 30px;
+
+            svg {
+              margin-right: 8px;
+            }
+
+            &:hover {
+              opacity: 0.7;
+            }
           }
 
           &-data {
@@ -107,6 +127,8 @@
             line-height: 30px;
             position: relative;
             padding-left: 33px;
+            font-weight: 300;
+            cursor: pointer;
 
             &:after {
               position: absolute;
@@ -114,6 +136,10 @@
               padding: 0 14px;
               left: 0;
               opacity: 0.2;
+            }
+
+            &:hover {
+              opacity: 1;
             }
           }
         }
@@ -192,20 +218,8 @@
             clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 22%, 93% 0);
           }
 
-          &-link {
+          .link {
             margin-top: 30px;
-            color: #0F0F0F;
-            font-size: 17px;
-            font-weight: 500;
-            letter-spacing: -0.6px;
-            line-height: 20px;
-            display: flex;
-            align-items: center;
-
-
-            svg {
-              margin-left: 6px;
-            }
           }
 
           &:first-child {
@@ -267,11 +281,8 @@
 
       &-wrap {
         max-height: 900px;
-        position: relative;
-        img {
-          max-width: 100%;
-          object-fit: contain;
-        }
+        position: sticky;
+        top: 0;
 
         svg {
           position: absolute;
