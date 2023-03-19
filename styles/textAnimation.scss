@@ -1,0 +1,23 @@
+.textWrap {
+  position: relative;
+
+  .text {
+    opacity: 0;
+  }
+
+  .writeText {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+#my-text span:not(:first-child) {
+  opacity: 0;
+}
+
+//#my-text {
+//  background-color: #6DD400;
+//  display: inline-block;
+//}
+

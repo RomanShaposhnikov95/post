@@ -5,6 +5,7 @@
         loop: true,
         pagination: false,
         speed: 100,
+        allowTouchMove: false,
         slideToClickedSlide: true,
         navigation: {
             nextEl: ".swiper-next",
