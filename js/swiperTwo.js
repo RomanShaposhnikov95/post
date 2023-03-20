@@ -5,6 +5,11 @@ var thumb = new Swiper(".thumb", {
     allowTouchMove: false,
     slideToClickedSlide: true,
     loop: true,
+    breakpoints: {
+        1300: {
+            slidesPerView: "4",
+        }
+    }
 });
 
 var swiper = new Swiper(".mySwiper", {

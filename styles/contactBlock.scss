@@ -10,6 +10,11 @@
     margin-top: 40px;
     &-item {
       width: calc(25% - 15px);
+
+      svg {
+        min-width: 50px;
+      }
+
       &-descr {
         color: #999999;
         font-size: 15px;
@@ -25,6 +30,39 @@
         letter-spacing: -0.6px;
         line-height: 26px;
         margin-top: 6px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .contactBlock {
+    &-wrap {
+      row-gap: 10px;
+      &-item {
+        width: calc(50% - 10px);
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .contactBlock {
+    &-wrap {
+      row-gap: 10px;
+      &-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        &-descr {
+          margin-top: 0;
+        }
+
+        &-content {
+          margin-left: 20px;
+        }
       }
     }
   }
