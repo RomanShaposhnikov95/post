@@ -1,0 +1,29 @@
+.requisites {
+  margin: 80px 0;
+  &-content {
+    &-item {
+      background-color: #EEEFF1;
+      padding: 24px 30px;
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:first-child {
+        margin-top: 30px;
+      }
+
+      &-data, &-descr {
+        color: #61646B;
+        font-size: 18px;
+        letter-spacing: -0.4px;
+        line-height: 26px;
+      }
+
+      &-descr {
+        font-size: 21px;
+      }
+    }
+  }
+}

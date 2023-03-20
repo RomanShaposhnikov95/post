@@ -21,7 +21,14 @@
     line-height: 26px;
     padding: 24px 30px;
     &:not(.collapsed) {
-      background-color: #8CD9CC;
+      //background-color: #8CD9CC;
+
+      background-color: #EEEFF1;
+      color: #0F0F0F;
+
+      &:after {
+        background-image: url("../assets/icons/ic-faq-arrow.svg");
+      }
     }
 
     &:after {

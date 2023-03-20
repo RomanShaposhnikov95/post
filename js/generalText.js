@@ -18,12 +18,12 @@ class AnimatedText {
                 span.style.backgroundColor = textElement.classList.contains("my-text-bg") ? "#0F0F0F" : "transparent"
                 textElement.appendChild(span);
 
-                if (i === text.length - 1) {
-                    const cursorSpan = document.createElement('span');
-                    // cursorSpan.innerText = '|';
-                    cursorSpan.classList.add('animated-text-cursor');
-                    span.appendChild(cursorSpan);
-                }
+                // if (i === text.length - 1) {
+                //     const cursorSpan = document.createElement('span');
+                //     cursorSpan.innerText = '|';
+                //     cursorSpan.classList.add('animated-text-cursor');
+                //     span.appendChild(cursorSpan);
+                // }
             }
 
             this.animateText(textElement);

@@ -1,0 +1,48 @@
+.form-group {
+  display: flex;
+  input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+
+    &:checked + label:after {
+      content: url("../assets/icons/ic-check.svg");
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:checked + label {
+      color: #6DD400;
+    }
+  }
+
+  label {
+    position: relative;
+    cursor: pointer;
+
+    color: #B6B7B8;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    line-height: 22px;
+
+    &:before {
+      content:'';
+      -webkit-appearance: none;
+      background-color: #FFFFFF;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+

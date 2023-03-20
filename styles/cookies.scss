@@ -1,0 +1,149 @@
+.cookie {
+  background-color: #0C0E12;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  padding: 60px 0;
+
+  .header-wrap-close {
+    top: 20px;
+    right: 20px;
+    height: 14px;
+    width: 14px;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-data {
+      display: flex;
+      align-items: center;
+      width: 61.3%;
+
+      svg {
+        margin-right: 40px;
+        min-width: 50px;
+      }
+
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          color: #FFFFFF;
+          font-size: 21px;
+          font-weight: 500;
+          letter-spacing: -0.4px;
+          line-height: 26px;
+        }
+
+        &-descr {
+          color: #B6B7B8;
+          font-size: 14px;
+          letter-spacing: -0.4px;
+          line-height: 22px;
+          margin-top: 12px;
+
+          a {
+            color: #8CD9CC;
+          }
+        }
+
+        &-checkboxes {
+          margin-top: 25px;
+          display: flex;
+          column-gap: 20px;
+        }
+      }
+    }
+
+    &-btns {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      width: 23.8%;
+
+      button {
+        max-width: 310px;
+        width: 100%;
+
+
+        &:first-child {
+          color: #FFFFFF;
+          background-color: rgb(100%, 100%, 100%, 0.1);
+          &:after {
+            background: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 700px) {
+  .cookie {
+    &-content {
+      flex-direction: column;
+
+
+      &-btns {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 20px;
+        column-gap: 10px;
+        justify-content: space-between;
+
+        button {
+          max-width: 50%;
+          width: calc(50% - 5px);
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 575px) {
+  .cookie {
+    &-content {
+
+      &-data {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        svg {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .cookie {
+    &-content {
+
+      &-data {
+        &-wrap {
+          &-checkboxes {
+           flex-direction: column;
+            row-gap: 10px;
+          }
+        }
+      }
+
+      &-btns {
+        flex-direction: column;
+
+        button {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

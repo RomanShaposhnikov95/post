@@ -161,6 +161,12 @@ ul {
 .more {
   .link {
     margin-top: 40px;
+
+    &:hover {
+      svg {
+        margin-left: 8px;
+      }
+    }
   }
 
   .more-visible {
@@ -281,6 +287,18 @@ ul {
   }
 }
 
+
+.title-l-w, .title-l-b {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: -0.7px;
+  line-height: 48px;
+}
+
+.title-l-b {
+  color: #0C0E12;
+}
 
 
 

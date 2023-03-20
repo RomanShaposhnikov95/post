@@ -82,6 +82,11 @@
             margin-top: 14px;
           }
         }
+
+      .btn {
+        min-height: 64px;
+        min-width: 268px;
+      }
     }
   }
 }
@@ -161,6 +166,10 @@
   .wrapper-right {
     &-deep {
       padding: 110px 90px 90px 90px;
+    }
+
+    .btn {
+      min-width: 174px;
     }
   }
 }
@@ -291,7 +300,8 @@
     &-deep {
 
       &-wrap {
-        max-height: 900px;
+        //max-height: 900px;
+        max-height: 100vh;
         position: sticky;
         top: 0;
 
@@ -302,7 +312,13 @@
           transform: translate(-50%, -50%);
           z-index: 1;
         }
+
+        img {
+          height: 100%;
+        }
       }
+
+
     }
   }
 }
@@ -349,6 +365,8 @@
 
       .btn {
         margin-top: 50px;
+        min-height: 64px;
+        min-width: 268px;
       }
     }
   }
