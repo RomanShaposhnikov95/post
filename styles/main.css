@@ -403,6 +403,15 @@ ul {
   opacity: 0;
 }
 
+.animated-text-cursor {
+  background-color: #6DD400;
+  display: inline-flex;
+  height: 48px;
+  width: 1px;
+  position: relative;
+  top: 5px;
+}
+
 .banner {
   background-image: url("../assets/img/image-header@2x.jpg");
   padding-top: 266px;
@@ -421,21 +430,11 @@ ul {
   font-size: 36px;
   font-weight: bold;
   letter-spacing: -0.7px;
-  line-height: 48px;
+  line-height: 40px;
   text-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
 }
 .banner-wrap-title span {
   color: #6DD400;
-  position: relative;
-}
-.banner-wrap-title span span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #6DD400;
-  display: inline-flex;
-  height: 48px;
-  width: 1px;
 }
 .banner-wrap-descr {
   margin-top: 20px;
@@ -505,7 +504,7 @@ ul {
 }
 .services-content-item-hidden {
   margin-top: 14px;
-  display: none;
+  transition: all 0.4s;
 }
 .services-content-item-hidden-descr {
   color: #61646B;
@@ -530,10 +529,6 @@ ul {
 .services-content-item:hover svg path {
   fill: #6DD400;
 }
-.services-content-item:hover .services-content-item-hidden {
-  display: block;
-}
-
 @media (max-width: 900px) {
   .services-content-item {
     width: calc(33.333% - 16px);
@@ -647,8 +642,6 @@ ul {
 }
 .smallBanner-wrap-content-title span {
   color: #6DD400;
-  background-color: #0F0F0F;
-  padding: 0 2px;
 }
 .smallBanner-wrap-content .btn {
   margin-top: 40px;

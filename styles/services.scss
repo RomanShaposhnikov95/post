@@ -45,7 +45,8 @@
 
       &-hidden {
         margin-top: 14px;
-        display: none;
+        transition: all 0.4s;
+        //display: none;
         &-descr {
           color: #61646B;
           font-size: 14px;
@@ -80,7 +81,8 @@
         }
 
         .services-content-item-hidden {
-          display: block;
+          //display: block;
+
         }
       }
     }

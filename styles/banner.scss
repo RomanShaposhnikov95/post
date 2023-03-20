@@ -16,20 +16,20 @@
       font-size: 36px;
       font-weight: bold;
       letter-spacing: -0.7px;
-      line-height: 48px;
+      line-height: 40px;
       text-shadow: 0 2px 1px 0 rgba(0,0,0,0.3);
       span {
         color: #6DD400;
-        position: relative;
-        span {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          background-color: #6DD400;
-          display: inline-flex;
-          height: 48px;
-          width: 1px;
-        }
+        //position: relative;
+        //span {
+        //  position: absolute;
+        //  bottom: 0;
+        //  right: 0;
+        //  background-color: #6DD400;
+        //  display: inline-flex;
+        //  height: 48px;
+        //  width: 1px;
+        //}
       }
     }
 
