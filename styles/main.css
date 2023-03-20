@@ -504,7 +504,7 @@ ul {
 }
 .services-content-item-hidden {
   margin-top: 14px;
-  transition: all 0.4s;
+  display: none;
 }
 .services-content-item-hidden-descr {
   color: #61646B;
@@ -529,6 +529,10 @@ ul {
 .services-content-item:hover svg path {
   fill: #6DD400;
 }
+.services-content-item:hover .services-content-item-hidden {
+  display: block;
+}
+
 @media (max-width: 900px) {
   .services-content-item {
     width: calc(33.333% - 16px);
