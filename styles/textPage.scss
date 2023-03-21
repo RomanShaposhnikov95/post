@@ -1,0 +1,152 @@
+.textPageBanner {
+  background-image: url("../assets/img/image-blog-article-hero@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 30px 0 60px 0;
+  .container {
+    max-width: 890px;
+    height: 100%;
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .new-content-item-img-date {
+      top: 0;
+      background-color: #6DD400;
+      color: #0C0E12;
+    }
+
+  }
+
+  &-content {
+    width: 100%;
+    height: 100%;
+    &-descr {
+      margin-top: 30px;
+      color: #FFFFFF;
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: -0.7px;
+      line-height: 48px;
+      text-shadow: 0 1px 1px 0 rgba(0,0,0,0.5);
+    }
+
+    .link {
+      color: #FFFFFF;
+
+      svg {
+        transition: all 0.3s;
+        margin-left: 0;
+        margin-right: 8px;
+      }
+
+      &:hover {
+        color: #6DD400;
+
+
+        svg {
+          margin-right: 18px;
+        }
+
+      }
+    }
+  }
+}
+
+.textPageWrap {
+  .container {
+    max-width: 890px;
+  }
+
+  &-section {
+    margin-top: 66px;
+
+    .title-xl {
+      margin-bottom: 24px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .descr-s-l {
+      margin-top: 16px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .list {
+      margin-bottom: 24px;
+      .descr-s-l {
+        margin-top: 8px;
+        position: relative;
+        padding-left: 24px;
+
+        &:first-child {
+          margin-top: 16px;
+        }
+
+        &:after {
+          position: absolute;
+          content: url("../assets/icons/ic-list.svg");
+          left: 0;
+          top: 60%;
+          transform: translateY(-50%);
+
+        }
+      }
+    }
+
+    &-wrap {
+      padding: 34px 40px;
+      background-color: #EEEFF1;
+      margin: 24px 0 36px 0;
+
+      &-title {
+        color: #0C0E12;
+        font-size: 24px;
+        letter-spacing: -0.56px;
+        line-height: 26px;
+      }
+
+      .descr-s-l {
+        margin: 0;
+      }
+
+      .btn {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+
+.title-xl {
+  color: #61646B;
+  font-size: 28px;
+  letter-spacing: -0.6px;
+  line-height: 38px;
+}
+
+.descr-s-l {
+  color: #0C0E12;
+  font-size: 17px;
+  letter-spacing: -0.2px;
+  line-height: 26px;
+
+  span {
+    font-weight: bold;
+  }
+
+  a {
+    color: #52A300;
+    text-decoration: underline;
+  }
+}

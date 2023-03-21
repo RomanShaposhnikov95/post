@@ -1,0 +1,19 @@
+.contactPage {
+  &-wrap {
+    margin-top: 53px;
+    .container {
+      display: flex;
+      column-gap: 20px;
+    }
+
+    &-form {
+      width: calc(50% - 10px);
+    }
+
+    &-map {
+      width: calc(50% - 10px);
+      height: 500px;
+      background-color: #6DD400;
+    }
+  }
+}

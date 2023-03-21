@@ -1,0 +1,93 @@
+.form {
+    &-wrap {
+      padding: 50px;
+      background-color: #EEF0F1;
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      &-header {
+        &-title {
+          color: #0C0E12;
+          font-size: 36px;
+          font-weight: bold;
+          letter-spacing: -0.7px;
+          line-height: 48px;
+        }
+
+        .descr-s {
+          margin-top: 16px;
+        }
+      }
+
+      &-section {
+
+        &-title {
+          color: #61646B;
+          font-size: 14px;
+          letter-spacing: -0.4px;
+          line-height: 26px;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+        }
+
+        &-inputs {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 10px;
+          row-gap: 10px;
+        }
+      }
+
+      .btn {
+        width: 100%;
+        margin-top: 6px;
+      }
+    }
+}
+
+
+.input-wrap, .input-wrap-half {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 26px;
+
+  input, textarea {
+    width: 100%;
+    padding: 14px 26px;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      height: 26px;
+      width: 488px;
+      color: #61646B;
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      line-height: 26px;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.input-wrap-half {
+  width: calc(50% - 5px);
+}
+
+.required {
+  &:after {
+    position: absolute;
+    content: "*";
+    color: #FA6400;
+    right: 6px;
+    top: 6px;
+    font-size: 20px;
+  }
+}

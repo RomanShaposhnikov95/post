@@ -1,0 +1,12 @@
+.contactPage-wrap .container {
+  display: flex;
+  column-gap: 20px;
+}
+.contactPage-wrap-form {
+  width: calc(50% - 10px);
+}
+.contactPage-wrap-map {
+  width: calc(50% - 10px);
+}
+
+/*# sourceMappingURL=contactPage.css.map */

@@ -35,6 +35,33 @@
   }
 }
 
+.formPage-contactBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descr-s {
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: -0.4px;
+    line-height: 26px;
+    text-align: center;
+    max-width: 860px;
+  }
+
+  .descr-s-g {
+    margin-top: 19px;
+    color: #6DD400;
+  }
+}
+
 
 @media (max-width: 800px) {
   .contactBlock {

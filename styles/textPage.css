@@ -1,0 +1,18 @@
+.textPageBanner {
+  background-image: url("../assets/img/image-blog-article-hero@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  min-height: 500px;
+}
+.textPageBanner .container {
+  max-width: 860px;
+  position: relative;
+}
+.textPageBanner .container .new-content-item-img-date {
+  top: 0;
+  background-color: #6DD400;
+  color: #0C0E12;
+}
+
+/*# sourceMappingURL=textPage.css.map */
