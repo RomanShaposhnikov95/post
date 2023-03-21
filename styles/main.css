@@ -1797,6 +1797,9 @@ ul {
 .new {
   margin: 60px 0;
 }
+.new .title-xl {
+  margin-bottom: 40px;
+}
 .new-content {
   display: flex;
   flex-wrap: wrap;
@@ -1947,11 +1950,14 @@ ul {
   transform: translateY(-50%);
 }
 .textPageWrap-section-wrap {
-  padding: 34px 40px;
-  background-color: #EEEFF1;
+  background-color: #6DD400;
   margin: 24px 0 36px 0;
 }
-.textPageWrap-section-wrap-title {
+.textPageWrap-section-wrap-content {
+  background-color: #EEEFF1;
+  padding: 34px 40px;
+}
+.textPageWrap-section-wrap-content-title {
   color: #0C0E12;
   font-size: 24px;
   letter-spacing: -0.56px;
@@ -1962,6 +1968,42 @@ ul {
 }
 .textPageWrap-section-wrap .btn {
   margin-top: 24px;
+}
+.textPageWrap-section .clip .textPageWrap-section-wrap-content {
+  clip-path: polygon(93% 104%, 125% 8%, 100% 0, 0 0, 0 100%);
+}
+.textPageWrap-section ol, .textPageWrap-section ul {
+  padding-left: 20px;
+}
+.textPageWrap-section ol li, .textPageWrap-section ul li {
+  counter-increment: item;
+  padding-left: 20px;
+  margin-top: 8px !important;
+}
+.textPageWrap-section ol li:first-child, .textPageWrap-section ul li:first-child {
+  counter-reset: item;
+}
+.textPageWrap-section ol li::marker, .textPageWrap-section ul li::marker {
+  color: #0C0E12;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 28px;
+}
+.textPageWrap-section ol ol, .textPageWrap-section ul ol {
+  padding-left: 0;
+}
+.textPageWrap-section ol ol li, .textPageWrap-section ul ol li {
+  display: block;
+}
+.textPageWrap-section ol ol li:before, .textPageWrap-section ul ol li:before {
+  content: counters(item, ".") ".";
+  padding-right: 15px;
+  color: #0C0E12;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 28px;
 }
 
 .title-xl {

@@ -1,5 +1,9 @@
 .new {
   margin: 60px 0;
+
+  .title-xl {
+    margin-bottom: 40px;
+  }
   &-content {
     display: flex;
     flex-wrap: wrap;

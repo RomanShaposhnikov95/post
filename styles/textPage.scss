@@ -105,16 +105,21 @@
     }
 
     &-wrap {
-      padding: 34px 40px;
-      background-color: #EEEFF1;
+      background-color: #6DD400;
       margin: 24px 0 36px 0;
 
-      &-title {
-        color: #0C0E12;
-        font-size: 24px;
-        letter-spacing: -0.56px;
-        line-height: 26px;
+      &-content {
+        background-color: #EEEFF1;
+        padding: 34px 40px;
+        //clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 8%, 95% 0);
+        &-title {
+          color: #0C0E12;
+          font-size: 24px;
+          letter-spacing: -0.56px;
+          line-height: 26px;
+        }
       }
+
 
       .descr-s-l {
         margin: 0;
@@ -122,6 +127,53 @@
 
       .btn {
         margin-top: 24px;
+      }
+    }
+
+    .clip {
+      .textPageWrap-section-wrap-content {
+        clip-path: polygon(93% 104%, 125% 8%, 100% 0, 0 0, 0 100%);
+      }
+    }
+
+    ol, ul {
+      padding-left: 20px;
+
+      li {
+        counter-increment: item;
+        padding-left: 20px;
+        margin-top: 8px !important;
+
+
+        &:first-child {
+          counter-reset: item;
+        }
+
+        &::marker {
+          color: #0C0E12;
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: -0.2px;
+          line-height: 28px;
+        }
+      }
+
+      ol {
+        padding-left: 0;
+
+        li {
+          display: block;
+
+          &:before {
+            content: counters(item, ".") ".";
+            padding-right: 15px;
+            color: #0C0E12;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.2px;
+            line-height: 28px;
+          }
+        }
       }
     }
   }
