@@ -27,3 +27,14 @@
     }
   }
 }
+
+
+@media (max-width: 575px) {
+  .requisites {
+    &-content {
+      &-item {
+        flex-direction: column;
+      }
+    }
+  }
+}

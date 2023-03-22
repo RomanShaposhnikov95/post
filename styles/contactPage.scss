@@ -12,8 +12,88 @@
 
     &-map {
       width: calc(50% - 10px);
-      height: 500px;
-      background-color: #6DD400;
+      //height: 500px;
+      //background-color: #6DD400;
+
+      #map {
+        width: 100%;
+        min-height: 300px;
+        height: 100%;
+
+        // .gm-control-active {
+        //  display: none !important;
+        //}
+
+        .gm-style-cc, .gm-fullscreen-control, .gm-style-mtc {
+          display: none !important;
+        }
+
+        .gmnoprint {
+          div {
+            &:first-child {
+              display: flex;
+              flex-direction: column-reverse;
+            }
+          }
+        }
+
+        .gm-control-active {
+          height: 40px !important;
+          width: 40px !important;
+          background-color: #0F0F0F !important;
+          position: relative;
+
+          img {
+            display: none;
+          }
+
+          &:first-child {
+            &:after {
+              content: "+";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 30px;
+              color: #FFFFFF;
+            }
+          }
+
+          &:last-child {
+            &:after {
+              content: "-";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 35px;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
     }
   }
 }
+
+
+
+@media (max-width: 900px) {
+  .contactPage {
+    &-wrap {
+      .container {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+
+      &-form {
+        width: 100%;
+      }
+
+      &-map {
+        width: 100%;
+      }
+    }
+  }
+}
+

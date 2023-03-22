@@ -105,20 +105,16 @@
     }
 
     &-wrap {
-      background-color: #6DD400;
       margin: 24px 0 36px 0;
-
-      &-content {
-        background-color: #EEEFF1;
-        padding: 34px 40px;
-        //clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 8%, 95% 0);
-        &-title {
-          color: #0C0E12;
-          font-size: 24px;
-          letter-spacing: -0.56px;
-          line-height: 26px;
-        }
+      background-color: #EEEFF1;
+      padding: 34px 40px;
+      &-title {
+        color: #0C0E12;
+        font-size: 24px;
+        letter-spacing: -0.56px;
+        line-height: 26px;
       }
+
 
 
       .descr-s-l {
@@ -131,9 +127,19 @@
     }
 
     .clip {
-      .textPageWrap-section-wrap-content {
-        clip-path: polygon(93% 104%, 125% 8%, 100% 0, 0 0, 0 100%);
-      }
+      position: relative;
+
+        &:after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          border-bottom: 50px solid #6DD400;
+          border-left: 50px solid transparent;
+          bottom: 0;
+          right: 0;
+        }
+
     }
 
     ol, ul {
