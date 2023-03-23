@@ -1,0 +1,154 @@
+.transportPage {
+  .tab-content {
+    padding: 60px 0 50px 0;
+    .tab-pane {
+      &-title {
+        color: #0C0E12;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: -0.7px;
+        line-height: 48px;
+      }
+
+      .descr-s {
+        margin-top: 16px;
+        max-width: 860px;
+      }
+
+      &-content {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 60px;
+        &-item {
+          width: calc(50% - 10px);
+          &-wrap {
+            margin-bottom: 40px;
+
+            min-height: 360px;
+            width: 100%;
+            background-color: #EEEFF1;
+            display: flex;
+            justify-content: flex-end;
+
+            &-data {
+              background-color: rgba(12,14,18,0.8);
+              padding: 25px;
+              width: 36%;
+              position: relative;
+              min-width: 230px;
+
+              &:after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 25px solid #6DD400;
+                border-left: 25px solid transparent;
+                top: 0;
+                right: 0;
+              }
+
+              &-title {
+                color: #FFFFFF;
+                font-size: 21px;
+                letter-spacing: -0.4px;
+                line-height: 26px;
+              }
+
+              &-content {
+                margin-top: 20px;
+                width: 100%;
+                &-item {
+                  margin-top: 4px;
+                  display: flex;
+                  justify-content: space-between;
+                  width: 100%;
+
+                  &:first-child {
+                    margin-top: 0;
+                  }
+                  &-title {
+                    opacity: 0.7;
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    letter-spacing: -0.4px;
+                    line-height: 22px;
+                    max-width: 50%;
+                  }
+
+                  &-info {
+                    color: #6DD400;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: -0.4px;
+                    line-height: 22px;
+                    max-width: 50%;
+                  }
+                }
+              }
+            }
+          }
+
+          &-title {
+            color: #61646B;
+            font-size: 28px;
+            letter-spacing: -0.6px;
+            line-height: 38px;
+          }
+
+          .descr-s {
+            margin-top: 10px;
+            max-width: 100%;
+          }
+
+          .link {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  &-smallBanner {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 920px) {
+  .transportPage {
+    .tab-content {
+      .tab-pane{
+        &-content {
+          &-item {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:475px) {
+  .transportPage {
+    .tab-content {
+      .tab-pane{
+        &-content {
+          &-item {
+            &-wrap {
+
+              flex-direction: column;
+
+              &-data {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
