@@ -1,4 +1,4 @@
-var thumb = new Swiper(".thumb", {
+var thumb = new Swiper(".test", {
     spaceBetween: 10,
     slidesPerGroup: 1,
     slidesPerView: "auto",

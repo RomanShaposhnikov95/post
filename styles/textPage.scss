@@ -83,25 +83,7 @@
     }
 
     .list {
-      margin-bottom: 24px;
-      .descr-s-l {
-        margin-top: 8px;
-        position: relative;
-        padding-left: 24px;
-
-        &:first-child {
-          margin-top: 16px;
-        }
-
-        &:after {
-          position: absolute;
-          content: url("../assets/icons/ic-list.svg");
-          left: 0;
-          top: 60%;
-          transform: translateY(-50%);
-
-        }
-      }
+      margin: 16px 0 24px 0;
     }
 
     &-wrap {
@@ -142,46 +124,46 @@
 
     }
 
-    ol, ul {
-      padding-left: 20px;
-
-      li {
-        counter-increment: item;
-        padding-left: 20px;
-        margin-top: 8px !important;
-
-
-        &:first-child {
-          counter-reset: item;
-        }
-
-        &::marker {
-          color: #0C0E12;
-          font-size: 16px;
-          font-weight: 500;
-          letter-spacing: -0.2px;
-          line-height: 28px;
-        }
-      }
-
-      ol {
-        padding-left: 0;
-
-        li {
-          display: block;
-
-          &:before {
-            content: counters(item, ".") ".";
-            padding-right: 15px;
-            color: #0C0E12;
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: -0.2px;
-            line-height: 28px;
-          }
-        }
-      }
-    }
+    //ol, ul {
+    //  padding-left: 20px;
+    //
+    //  li {
+    //    counter-increment: item;
+    //    padding-left: 20px;
+    //    margin-top: 8px !important;
+    //
+    //
+    //    &:first-child {
+    //      counter-reset: item;
+    //    }
+    //
+    //    &::marker {
+    //      color: #0C0E12;
+    //      font-size: 16px;
+    //      font-weight: 500;
+    //      letter-spacing: -0.2px;
+    //      line-height: 28px;
+    //    }
+    //  }
+    //
+    //  ol {
+    //    padding-left: 0;
+    //
+    //    li {
+    //      display: block;
+    //
+    //      &:before {
+    //        content: counters(item, ".") ".";
+    //        padding-right: 15px;
+    //        color: #0C0E12;
+    //        font-size: 16px;
+    //        font-weight: 500;
+    //        letter-spacing: -0.2px;
+    //        line-height: 28px;
+    //      }
+    //    }
+    //  }
+    //}
   }
 }
 
