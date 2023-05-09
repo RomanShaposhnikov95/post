@@ -26,6 +26,9 @@
         closeSvg.classList.toggle('d-none')
         overlay.classList.toggle('d-none')
         document.body.classList.toggle('body-active')
+
+        firstMenu.style.top = `${head.clientHeight + head.getBoundingClientRect().top}px` // добавить
+        overlay.style.top = `${head.clientHeight + head.getBoundingClientRect().top}px` // добавить
     })
 
     dropdown.forEach(el => {
@@ -92,5 +95,6 @@
 
         })
     }
+
 
 })()

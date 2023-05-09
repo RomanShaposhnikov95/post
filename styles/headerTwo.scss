@@ -98,7 +98,8 @@
 
   .overlay {
     position: fixed;
-    top: 95px;
+    //top: 95px;
+    top: 170px;
     left: 0;
     height: 100%;
     width: 100%;
@@ -275,6 +276,7 @@
 
     .overlay {
       top: 63px;
+      //top: 98px;
     }
   }
 
@@ -286,6 +288,7 @@
       overflow-x: hidden;
       padding: 40px;
       top: 63px;
+      //top: 98px;
       left: 0;
       background-color: #EEF0F1;
       position: fixed;
