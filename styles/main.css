@@ -463,6 +463,9 @@ ul {
   .head .mobile-menu-dropdown-list .menu-li {
     margin-bottom: 20px;
   }
+  .head .mobile-menu-dropdown-list .menu-li:last-child {
+    margin-bottom: 0;
+  }
   .head .mobile-menu-dropdown-list-inside {
     display: flex;
     flex-direction: column;
