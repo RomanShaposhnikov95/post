@@ -133,6 +133,15 @@
             font-weight: 500;
             letter-spacing: 0;
             line-height: 20px;
+
+          }
+
+          &:before {
+            content: url("../assets/icons/ic-dropdown-menu-black.svg");
+            right: -15px;
+            top: 5px;
+            position: absolute;
+            transform: rotate(180deg);
           }
 
           &:after {
@@ -253,8 +262,9 @@
             &:before {
               content: url("../assets/icons/ic-dropdown-menu.svg");
               right: -15px;
-              top: -20%;
+              top: -5px;
               position: absolute;
+              transform: rotate(360deg);
             }
 
             &:after {

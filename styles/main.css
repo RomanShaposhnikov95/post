@@ -420,6 +420,13 @@ ul {
     letter-spacing: 0;
     line-height: 20px;
   }
+  .head .mobile-menu-dropdown .nextToSecondMenu:before {
+    content: url("../assets/icons/ic-dropdown-menu-black.svg");
+    right: -15px;
+    top: 5px;
+    position: absolute;
+    transform: rotate(180deg);
+  }
   .head .mobile-menu-dropdown .nextToSecondMenu:after {
     content: "";
     top: 100%;
@@ -506,8 +513,9 @@ ul {
   .head .mobile-menu-dropdown:hover .nextToSecondMenu:before {
     content: url("../assets/icons/ic-dropdown-menu.svg");
     right: -15px;
-    top: -20%;
+    top: -5px;
     position: absolute;
+    transform: rotate(360deg);
   }
   .head .mobile-menu-dropdown:hover .nextToSecondMenu:after {
     height: 100px;
