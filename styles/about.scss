@@ -58,7 +58,7 @@
 @media (max-width: 975px) {
   .about {
     &-info {
-      padding: 100px 15px 100px 0;
+      padding: 40px 15px 60px 0;
       &-wrap {
         row-gap: 10px;
         &-item {
@@ -73,6 +73,7 @@
   .about {
     &-info {
       &-wrap {
+        margin-top: 52px;
         &-item {
           width: calc(33.33333% - 7px);
         }
@@ -87,6 +88,14 @@
       &-wrap {
         &-item {
           width: 100%;
+          position: relative;
+
+          svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 40px;
+          }
         }
       }
     }

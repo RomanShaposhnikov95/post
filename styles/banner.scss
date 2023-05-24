@@ -62,10 +62,14 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 475px) {
   .banner {
+    text-align: center;
+    .container {
+      padding: 0;
+    }
     &-wrap {
-      padding: 15px;
+      padding: 40px 20px 20px 20px;
 
       .btn {
         width: 100%;
