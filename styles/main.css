@@ -2676,4 +2676,26 @@ ul {
   width: calc(50% - 10px);
 }
 
+@media (max-width: 775px) {
+  .banner-section-item {
+    width: calc(50% - 10px);
+  }
+  .banner-section-item:nth-child(5) {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .banner-section .container {
+    padding: 0;
+    row-gap: 0;
+  }
+  .banner-section-item {
+    box-shadow: inset 0 -1px 0 0 #1F1F1F;
+    width: 100%;
+  }
+  .banner-section-item:nth-child(4) {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
