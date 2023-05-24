@@ -10,9 +10,8 @@
             const listInside = el.querySelector('.mobile-menu-dropdown-list');
             const next = el.querySelector('.nextToSecondMenu');
 
-            if (!listInside) {
-                next.style.position = "static"
-                el.style.position = "static"
+            if (listInside) {
+                next.classList.add('arrow')
             }
         })
         window.addEventListener('scroll', function() {
@@ -81,8 +80,9 @@
             const thirdMenu = m.querySelector('.mobile-menu-dropdown-list-inside')
 
             if (!thirdMenu) {
-                nextToThirdMenu.style.position = "static"
                 return
+            } else {
+                nextToThirdMenu.classList.add("ifChild")
             }
 
             nextToThirdMenu.addEventListener('click', () => {
