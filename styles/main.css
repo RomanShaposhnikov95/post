@@ -2354,11 +2354,15 @@ ul {
 }
 .transportPage .tab-content .tab-pane-content-item-wrap {
   margin-bottom: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 360px;
   width: 100%;
   background-color: #EEEFF1;
   display: flex;
   justify-content: flex-end;
+  overflow-x: hidden;
 }
 .transportPage .tab-content .tab-pane-content-item-wrap-data {
   background-color: rgba(12, 14, 18, 0.8);
@@ -2366,6 +2370,8 @@ ul {
   width: 36%;
   position: relative;
   min-width: 230px;
+  right: -100%;
+  transition: all 0.3s;
 }
 .transportPage .tab-content .tab-pane-content-item-wrap-data:after {
   position: absolute;
@@ -2411,6 +2417,9 @@ ul {
   letter-spacing: -0.4px;
   line-height: 22px;
   max-width: 50%;
+}
+.transportPage .tab-content .tab-pane-content-item-wrap:hover .tab-pane-content-item-wrap-data {
+  right: 0;
 }
 .transportPage .tab-content .tab-pane-content-item-title {
   color: #61646B;
@@ -2707,7 +2716,7 @@ ul {
   row-gap: 50px;
 }
 .contact-left {
-  width: calc(50% - 10px);
+  width: 41.2%;
 }
 .contact-left .title {
   color: #0F0F0F;
@@ -2742,7 +2751,7 @@ ul {
   column-gap: 10px;
 }
 .contact-right {
-  width: calc(50% - 10px);
+  width: 51.6%;
   display: flex;
   flex-direction: column;
   justify-content: center;
