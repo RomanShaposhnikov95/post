@@ -5,6 +5,7 @@ var thumb = new Swiper(".test", {
     allowTouchMove: false,
     slideToClickedSlide: true,
     loop: true,
+    speed: 10,
     breakpoints: {
         1300: {
             slidesPerView: "4",
@@ -48,6 +49,7 @@ var swiper = new Swiper(".mySwiper", {
             allowTouchMove: false,
             effect: "fade",
             loop: true,
+            speed: 10,
             navigation: {
                 nextEl: ".swiper-prev",
                 prevEl: ".swiper-next",
