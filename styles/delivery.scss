@@ -4,12 +4,14 @@
 
   .wrapper-left {
     &-deep {
-      padding: 93px 0;
+      //padding: 93px 0;
+      padding-top: 93px;
+      padding-bottom: 93px;
 
       .delivery-left-content {
         margin-top: 40px;
         max-width: 530px;
-        padding-left: 17px;
+        padding-left: 3px;
 
         button {
           color: #05051A;
@@ -290,7 +292,7 @@
 
   .wrapper-right {
     &-deep {
-
+      padding-right: 40px;
     }
   }
 }

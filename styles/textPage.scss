@@ -5,7 +5,7 @@
   width: 100%;
   padding: 30px 0 60px 0;
   .container {
-    max-width: 890px;
+    max-width: 940px;
     height: 100%;
     min-height: 410px;
 
@@ -60,7 +60,7 @@
 
 .textPageWrap {
   .container {
-    max-width: 890px;
+    max-width: 1080px;
   }
 
   &-section {
@@ -72,6 +72,11 @@
 
     img {
       max-width: 100%;
+      margin-top: 9px;
+
+      &:first-child  {
+        margin-top: 0;
+      }
     }
 
     .descr-s-l {
@@ -165,6 +170,13 @@
     //  }
     //}
   }
+
+  .text {
+    width: 100%;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -190,8 +202,6 @@
     text-decoration: underline;
   }
 }
-
-
 
 .textPageBanner-view-two {
   position: relative;
@@ -222,3 +232,4 @@
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
   }
 }
+

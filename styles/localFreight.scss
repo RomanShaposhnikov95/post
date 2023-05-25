@@ -1,5 +1,5 @@
 .freight {
-  padding: 50px 0 120px 0;
+  padding: 60px 0 120px 0;
   .container {
     display: flex;
     justify-content: space-between;
@@ -17,39 +17,6 @@
       }
     }
 
-    &-bannerWrap {
-      display: flex;
-      flex-direction: column;
-      row-gap: 20px;
-
-      &-wrap {
-        display: flex;
-        column-gap: 20px;
-        &-item {
-          box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
-          padding: 30px;
-
-          .title {
-            margin: 20px 0 10px 0;
-          }
-        }
-
-      }
-
-      &-map {
-        width: 100%;
-        background-color: #8CD9CC;
-        padding: 30px;
-
-        .title {
-          color: #16171B;
-          font-size: 14px;
-          letter-spacing: -0.4px;
-          line-height: 22px;
-        }
-      }
-    }
-
     &-infoWrap {
 
       img {
@@ -57,17 +24,55 @@
         margin-bottom: 40px;
       }
 
-
       .check-list  {
         margin-top: 30px;
       }
 
       .descr-s {
         margin-top: 20px;
+
+        span {
+          color: #FF0000;
+        }
       }
 
       .btn {
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      &-wrap {
+        display: flex;
+        column-gap: 20px;
+        row-gap: 20px;
+        flex-wrap: wrap;
         margin-top: 40px;
+        &-item {
+          width: calc(50% - 10px);
+          box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+          padding: 30px;
+
+          .title {
+            margin: 20px 0 10px 0;
+            color: #0C0E12;
+            font-size: 21px;
+            font-weight: 500;
+            letter-spacing: -0.4px;
+            line-height: 28px;
+          }
+        }
+
+      }
+
+      .small {
+        .freight-content-infoWrap-wrap-item {
+          width: calc(33.33333% - 14px);
+          text-align: center;
+
+          .title {
+            margin: 14px 0 0 0;
+          }
+        }
       }
     }
 
@@ -82,6 +87,7 @@
 
         .mySwiper {
           min-height: unset;
+          margin-top: 40px;
           .swiper-wrapper {
 
             .swiper-slide {
@@ -116,26 +122,44 @@
 
         &-item {
           width: 100%;
-          padding: 24px 30px;
           box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+          display: flex;
 
-          .title {
-            color: #0C0E12;
-            font-size: 21px;
-            font-weight: 500;
-            letter-spacing: -0.4px;
-            line-height: 28px;
+          &-img {
+            width: 230px;
+            min-width: 230px;
+            background-color: #8CD9CC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
           }
 
-          .descr {
-            color: #61646B;
-            font-size: 14px;
-            letter-spacing: -0.4px;
-            line-height: 22px;
-            margin: 12px 0 20px 0;
+          &-wrap {
+            padding: 24px 30px;
+            .title {
+              color: #0C0E12;
+              font-size: 21px;
+              font-weight: 500;
+              letter-spacing: -0.4px;
+              line-height: 28px;
+            }
+
+            .descr {
+              color: #61646B;
+              font-size: 14px;
+              letter-spacing: -0.4px;
+              line-height: 22px;
+              margin: 12px 0 20px 0;
+            }
           }
+
         }
       }
+    }
+
+    .questions {
+      padding: 0;
     }
   }
 
@@ -144,7 +168,8 @@
     padding: 30px;
     background: #0E0F14;
     width: 23.8%;
-    position: relative;
+    position: sticky;
+    top: 80px;
 
     .title {
       color: #FFFFFF;
@@ -186,6 +211,7 @@
 
     &-banner {
       width: 100%;
+      position: static;
     }
   }
 }
@@ -196,10 +222,42 @@
     &-content {
       width: 100%;
 
-      &-bannerWrap {
+
+      &-infoWrap {
         &-wrap {
-          flex-direction: column;
-          row-gap: 20px;
+          &-item {
+            width: 100%;
+          }
+        }
+
+        .small {
+          .freight-content-infoWrap-wrap-item {
+            width: 100%;
+
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 550px) {
+  .freight {
+    &-content {
+      width: 100%;
+
+
+      &-readMoreWrap {
+        &-content {
+          &-item {
+            display: flex;
+            flex-direction: column;
+
+            &-img {
+              width: 100%;
+            }
+          }
         }
       }
     }
