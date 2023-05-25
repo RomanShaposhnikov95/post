@@ -12,6 +12,7 @@
         margin-top: 40px;
         max-width: 530px;
         padding-left: 3px;
+        padding-right: 10px;
 
         button {
           color: #05051A;
@@ -292,7 +293,13 @@
 
   .wrapper-right {
     &-deep {
-      padding-right: 40px;
+      .slide-window {
+        margin-right: 40px;
+
+        .slide-logo {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -314,7 +321,7 @@
 }
 
 
-@media (max-width: 675px) {
+@media (max-width: 750px) {
   .delivery {
     display: none;
     .wrapper-right {
@@ -325,9 +332,70 @@
   }
 
   .partner {
+    padding-bottom: 20px;
     .wrapper-left {
       &-deep {
-        padding-right: 15px;
+        padding-right: 40px;
+      }
+    }
+
+    .wrapper-right {
+      &-deep {
+
+        .thumb {
+          display: none;
+        }
+
+        .swiper {
+          margin-right: 40px;
+        }
+
+        .slide-window {
+         max-width: unset;
+          margin-right: 0;
+
+          .slide-logo {
+            display: block;
+            margin-bottom: 20px;
+          }
+
+          .swiper-slide {
+            padding: 30px 30px 85px 30px;
+            width: calc(100% - 80px);
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            &-descr, &-descr-s {
+              font-size: 17px;
+            }
+          }
+
+          &:after {
+            content: none;
+          }
+          .slide-window-btns {
+            display: none;
+          }
+
+          .swiper-pagination {
+            background-color: #FFFFFF;
+            bottom: -1px;
+            padding: 20px;
+
+            .swiper-pagination-bullet {
+              height: 8px;
+              width: 8px;
+              background-color: #0F0F0F;
+              border-radius: unset;
+              opacity: 1;
+            }
+
+            .swiper-pagination-bullet-active {
+              background-color: #6DD400;
+            }
+          }
+        }
       }
     }
   }
@@ -370,6 +438,40 @@
       &-deep {
         max-width: 100%;
       }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .partner {
+    .wrapper-left {
+        &-deep {
+          .title-m-light {
+            font-size: 20px;
+            letter-spacing: -0.4px;
+            line-height: 24px;
+          }
+          .title-wrap {
+            margin-top: 20px;
+            &-item {
+              font-size: 40px;
+              letter-spacing: -1.2px;
+              line-height: 50px;
+            }
+          }
+
+          .descr-s {
+            margin-top: 20px;
+            font-size: 17px;
+            letter-spacing: -0.4px;
+            line-height: 26px;
+          }
+
+          .btn {
+            width: 100%;
+            margin-top: 30px;
+          }
+        }
     }
   }
 }

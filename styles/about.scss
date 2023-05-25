@@ -69,6 +69,12 @@
   }
 }
 
+@media (max-width: 750px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+}
+
 @media (max-width: 675px) {
   .about {
     &-info {

@@ -311,7 +311,6 @@ ul {
       &-deep {
         width: 100%;
         max-width: 660px;
-        padding-left: 40px;
       }
     }
 
@@ -347,18 +346,20 @@ ul {
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1380px) {
   .wrapper {
     &-left {
-      padding-left: 15px !important;
+      &-deep {
+        padding-left: 40px;
+      }
     }
   }
 }
 
 
-@media (max-width: 675px) {
+@media (max-width: 750px) {
   .wrapper {
-    flex-direction: column-reverse;
+    flex-direction: column;
 
     &-left {
       width: 100%;

@@ -250,7 +250,6 @@ ul {
 .wrapper-left-deep {
   width: 100%;
   max-width: 660px;
-  padding-left: 40px;
 }
 .wrapper-right {
   width: 49.375%;
@@ -279,14 +278,14 @@ ul {
   z-index: 1;
 }
 
-@media (max-width: 1300px) {
-  .wrapper-left {
-    padding-left: 15px !important;
+@media (max-width: 1380px) {
+  .wrapper-left-deep {
+    padding-left: 40px;
   }
 }
-@media (max-width: 675px) {
+@media (max-width: 750px) {
   .wrapper {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .wrapper-left {
     width: 100%;
@@ -954,6 +953,11 @@ ul {
     width: calc(50% - 5px);
   }
 }
+@media (max-width: 750px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+}
 @media (max-width: 675px) {
   .about-info-wrap {
     margin-top: 52px;
@@ -1079,6 +1083,9 @@ ul {
   line-height: 26px;
   flex-grow: 2;
 }
+.slide-window .mySwiper .swiper-wrapper .swiper-slide-bottom {
+  padding-right: 100px;
+}
 .slide-window .mySwiper .swiper-wrapper .swiper-slide-bottom-title {
   color: #0F0F0F;
   font-size: 19px;
@@ -1114,6 +1121,11 @@ ul {
   background-color: #88F316;
 }
 
+@media (max-width: 750px) {
+  .slide-window .mySwiper .swiper-wrapper .swiper-slide-bottom {
+    padding-right: 0;
+  }
+}
 .delivery {
   background-color: #EEEFF1;
   padding: 70px 0;
@@ -1126,6 +1138,7 @@ ul {
   margin-top: 40px;
   max-width: 530px;
   padding-left: 3px;
+  padding-right: 10px;
 }
 .delivery .wrapper-left-deep .delivery-left-content button {
   color: #05051A;
@@ -1357,8 +1370,11 @@ ul {
   min-height: 64px;
   min-width: 268px;
 }
-.partner .wrapper-right-deep {
-  padding-right: 40px;
+.partner .wrapper-right-deep .slide-window {
+  margin-right: 40px;
+}
+.partner .wrapper-right-deep .slide-window .slide-logo {
+  display: none;
 }
 
 @media (max-width: 1100px) {
@@ -1367,7 +1383,7 @@ ul {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 675px) {
+@media (max-width: 750px) {
   .delivery {
     display: none;
   }
@@ -1375,8 +1391,56 @@ ul {
     padding: 30px;
   }
 
+  .partner {
+    padding-bottom: 20px;
+  }
   .partner .wrapper-left-deep {
-    padding-right: 15px;
+    padding-right: 40px;
+  }
+  .partner .wrapper-right-deep .thumb {
+    display: none;
+  }
+  .partner .wrapper-right-deep .swiper {
+    margin-right: 40px;
+  }
+  .partner .wrapper-right-deep .slide-window {
+    max-width: unset;
+    margin-right: 0;
+  }
+  .partner .wrapper-right-deep .slide-window .slide-logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .partner .wrapper-right-deep .slide-window .swiper-slide {
+    padding: 30px 30px 85px 30px;
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .partner .wrapper-right-deep .slide-window .swiper-slide-descr, .partner .wrapper-right-deep .slide-window .swiper-slide-descr-s {
+    font-size: 17px;
+  }
+  .partner .wrapper-right-deep .slide-window:after {
+    content: none;
+  }
+  .partner .wrapper-right-deep .slide-window .slide-window-btns {
+    display: none;
+  }
+  .partner .wrapper-right-deep .slide-window .swiper-pagination {
+    background-color: #FFFFFF;
+    bottom: -1px;
+    padding: 20px;
+  }
+  .partner .wrapper-right-deep .slide-window .swiper-pagination .swiper-pagination-bullet {
+    height: 8px;
+    width: 8px;
+    background-color: #0F0F0F;
+    border-radius: unset;
+    opacity: 1;
+  }
+  .partner .wrapper-right-deep .slide-window .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #6DD400;
   }
 
   .quest .wrapper-left-deep-contact-item {
@@ -1401,6 +1465,31 @@ ul {
   }
   .advantages .wrapper-left-deep {
     max-width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .partner .wrapper-left-deep .title-m-light {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+  }
+  .partner .wrapper-left-deep .title-wrap {
+    margin-top: 20px;
+  }
+  .partner .wrapper-left-deep .title-wrap-item {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+    line-height: 50px;
+  }
+  .partner .wrapper-left-deep .descr-s {
+    margin-top: 20px;
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    line-height: 26px;
+  }
+  .partner .wrapper-left-deep .btn {
+    width: 100%;
+    margin-top: 30px;
   }
 }
 .questions {
@@ -2907,7 +2996,7 @@ ul {
   margin-top: 10px;
 }
 
-@media (min-width: 675px) {
+@media (min-width: 750px) {
   .mobile-tab {
     display: none;
   }

@@ -12,18 +12,63 @@ var thumb = new Swiper(".test", {
     }
 });
 
+// var swiper = new Swiper(".mySwiper", {
+//     spaceBetween: 10,
+//     navigation: {
+//         nextEl: ".swiper-prev",
+//         prevEl: ".swiper-next",
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
+//     centeredSlides: true,
+//     slidesPerView: 'auto',
+//     autoHeight: true,
+//     effect: "slide",
+//     breakpoints: {
+//         750: {
+//             loop: true,
+//             effect: "fade",
+//             pagination: false,
+//             slidesPerView: 1,
+//             centeredSlides: false,
+//             autoHeight: false,
+//         },
+//
+//     }
+// });
+
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
-    loop: true,
-    allowTouchMove: false,
-    effect: "fade",
-    navigation: {
-        nextEl: ".swiper-prev",
-        prevEl: ".swiper-next",
-    },
     thumbs: {
         swiper: thumb,
     },
+    breakpoints: {
+        750: {
+            allowTouchMove: false,
+            effect: "fade",
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-prev",
+                prevEl: ".swiper-next",
+            },
+            thumbs: {
+                swiper: thumb,
+            },
+        },
+
+        1: {
+            allowTouchMove: true,
+            effect: "slide",
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: false,
+            autoHeight: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        }
+    }
 });
 
 
@@ -32,6 +77,8 @@ swiper.on("slideChange", function () {
 
     thumb.slideToLoop(activeSlideIndex, 300, false);
 });
+
+
 
 
 

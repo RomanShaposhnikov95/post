@@ -40,6 +40,7 @@
         }
 
         &-bottom {
+          padding-right: 100px;
           &-title {
             color: #0F0F0F;
             font-size: 19px;
@@ -80,6 +81,23 @@
 
       &:hover {
         background-color: #88F316;
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: 750px) {
+  .slide-window {
+    .mySwiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          &-bottom {
+            padding-right: 0;
+          }
+        }
       }
     }
   }
