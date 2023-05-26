@@ -1,0 +1,50 @@
+const levelOneMenu = document.querySelectorAll(".levelOne-li")
+
+
+levelOneMenu.forEach(el => {
+    const levelOneBtn = el.querySelector(".levelOne-li-btn")
+    const levelTwoMenu = el.querySelector(".levelTwo")
+    const levelTwoLi = el.querySelectorAll(".levelTwo-li")
+
+    if (!levelTwoMenu) return
+
+    levelOneBtn.addEventListener("click", () => {
+        levelTwoMenu.style.right = "0"
+    })
+
+    const liWrap = document.createElement('li')
+    liWrap.classList.add("back-menu")
+    const backToFirst = document.createElement('button')
+    backToFirst.textContent = levelOneBtn.innerHTML
+    backToFirst.addEventListener('click', () => {
+        levelTwoMenu.style.right = "-100%"
+    })
+    liWrap.appendChild(backToFirst)
+    levelTwoMenu.insertBefore(liWrap, levelTwoMenu.firstChild)
+
+    levelOneBtn.classList.add("content-true")
+
+    levelTwoLi.forEach(two => {
+        const levelTwoBtn = two.querySelector(".levelTwo-li-btn")
+        const levelThreeMenu = two.querySelector(".levelThree")
+
+        if (!levelThreeMenu) return
+
+        levelTwoBtn.addEventListener("click", () => {
+            levelThreeMenu.style.right = "0"
+        })
+
+        levelTwoBtn.classList.add("content-true")
+
+        const liWrapTwo = document.createElement('li')
+        liWrapTwo.classList.add("back-menu")
+        const backToSecond = document.createElement('button')
+        backToSecond.textContent = levelTwoBtn.innerHTML
+        backToSecond.addEventListener('click', () => {
+            levelThreeMenu.style.right = "-100%"
+        })
+        liWrapTwo.appendChild(backToSecond)
+        levelThreeMenu.insertBefore(liWrapTwo, levelThreeMenu.firstChild)
+    })
+
+})

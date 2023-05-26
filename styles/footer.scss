@@ -41,6 +41,8 @@
           transition: all 0.3s;
           font-size: 14px;
           line-height: 20px;
+          background-color: transparent;
+          border: none;
 
           &:after {
             transition: all 0.3s;
@@ -55,7 +57,7 @@
         }
 
         &:hover {
-          a {
+          a, button {
             opacity: 1;
 
             &:after {
@@ -71,7 +73,13 @@
         display: flex;
        flex-wrap: wrap;
 
-        span {
+        .footer-link {
+          display: flex;
+          align-items: center;
+          padding: 0;
+        }
+
+        svg {
           position: static;
           margin-left: 7px;
           display: flex;
@@ -80,7 +88,7 @@
           transition: all 0.3s;
         }
 
-        span.show {
+        .footer-link.show  svg {
           transform: rotate(180deg);
         }
 
