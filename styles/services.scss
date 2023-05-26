@@ -2,9 +2,9 @@
 .services {
   margin-top: 70px;
 
-  .container {
-    padding: 0 20px;
-  }
+  //.container {
+  //  padding: 0 20px;
+  //}
 
   &-title {
     color: #61646B;
@@ -51,7 +51,7 @@
       &-hidden {
         margin-top: 14px;
         transition: ease 0.3s;
-        height: 0;
+        max-height: 0;
         visibility: hidden;
         &-descr {
           color: #61646B;
@@ -111,10 +111,12 @@
     &-content {
       &-item {
         &:hover {
+          transition: all 0.3s;
           .services-content-item-wrap {
             border-color: #6DD400;
             background-color: #FFFFFF;
             position: absolute;
+
           }
 
           svg {
@@ -125,6 +127,8 @@
 
           .services-content-item-hidden {
             visibility: visible;
+            max-height: 1000px;
+            transition: all 0.7s;
           }
         }
       }
@@ -135,6 +139,9 @@
 
 @media (max-width: 900px) {
   .services {
+    .container {
+      padding: 0 20px;
+    }
     &-content {
       &-item {
         width: calc(33.333% - 16px);

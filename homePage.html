@@ -14,8 +14,9 @@
 </head>
 <body>
 
-<div class="head mobile">
-    <a href="#" class="head-logo">
+<header class="header">
+
+    <a href="#" class="header-logo">
         <svg width="112px" height="52px" viewBox="0 0 112 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>42F89DFD-F7A5-4ABE-8E98-FAE55A8DA81A</title>
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -31,100 +32,53 @@
             </g>
         </svg>
     </a>
-    <ul class="mobile-menu">
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu ">
-                <a href="#">Pakalpojumi</a>
-            </span>
-            <ul class="mobile-menu-dropdown-list">
-                <ul class="container">
-                    <li class="header-li"><button class="backToFirstMenu">back</button></li>
-                    <li class="menu-li">
-                        <span class="nextToThirdMenu">
-                            <a href="#">Kravu pārvadājumi</a>
-                        </span>
-                        <ul class="mobile-menu-dropdown-list-inside">
-                            <li><button class="backToSecondMenu">back</button></li>
-                            <li><a href="#">Vietējie kravu pārvadājumi</a></li>
-                            <li><a href="#">Vietējie kravu pārvadājumi</a></li>
-                            <li><a href="#">Vietējie kravu pārvadājumi</a></li>
-                        </ul>
-                    </li>
 
-                    <li class="menu-li">
-                        <span class="nextToThirdMenu">
-                            <a href="#">title2</a>
-                        </span>
-                        <ul class="mobile-menu-dropdown-list-inside">
-                            <li><button class="backToSecondMenu">back</button></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">test</a></li>
-                            <li><a href="#">test</a></li>
-                        </ul>
-                    </li>
 
-                    <li class="menu-li">
-                        <span class="nextToThirdMenu">
-                            <a href="#">title new</a>
-                        </span>
-                    </li>
-                </ul>
-            </ul>
-        </li>
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu">
-                <a href="#">Transports</a>
-            </span>
-            <ul class="mobile-menu-dropdown-list">
-                <li class="header-li"><button class="backToFirstMenu">back</button></li>
-                <ul class="container">
-                    <li class="menu-li">
-                        <span class="nextToThirdMenu">
-                            <a href="#">title</a>
-                        </span>
-                        <ul class="mobile-menu-dropdown-list-inside">
-                            <li><button class="backToSecondMenu">back</button></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
+    <div class="header-content">
+
+        <ul class="header-content-menu levelOne">
+            <li class="levelOne-li">
+                <button class="levelOne-li-btn">Kravu pārvadājumi</button>
+                <ul class="levelTwo">
+                    <li class="levelTwo-li">
+                        <button class="levelTwo-li-btn">Starptautiskie kravu pārvadājumi</button>
+                        <ul class="levelThree">
+                            <li class="levelThree-li"><a href="#">Lielgabarīta pārvadājumi</a></li>
+                            <li class="levelThree-li"><a href="#">Negabarīta pārvadājumi</a></li>
                         </ul>
                     </li>
-                    <li class="menu-li">
-                        <span class="nextToThirdMenu">
-                            <a href="#">title</a>
-                        </span>
-                        <ul class="mobile-menu-dropdown-list-inside">
-                            <li><button class="backToSecondMenu">back</button></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">test</a></li>
+                    <li class="levelTwo-li">
+                        <button class="levelTwo-li-btn">Vietējie kravu pārvadājumi</button>
+                        <ul class="levelThree">
+                            <li class="levelThree-li"><a href="#">1</a></li>
+                            <li class="levelThree-li"><a href="#">2</a></li>
                         </ul>
                     </li>
                 </ul>
-            </ul>
-        </li>
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu">
-                <a href="#">Noderīgi</a>
-            </span>
-        </li>
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu">
-                <a href="#">Jaunumi</a>
-            </span>
-        </li>
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu">
-                <a href="#">Kontakti</a>
-            </span>
-        </li>
+            </li>
+            <li class="levelOne-li">
+                <button class="levelOne-li-btn">Kravu pārvadājumi two</button>
+                <ul class="levelTwo">
+                    <li class="levelTwo-li">
+                        <button class="levelTwo-li-btn">test</button>
+                        <ul class="levelThree">
+                            <li class="levelThree-li"><a href="#">Lielgabarīta pārvadājumi</a></li>
+                            <li class="levelThree-li"><a href="#">Negabarīta pārvadājumi</a></li>
+                        </ul>
+                    </li>
+                    <li class="levelTwo-li">
+                        <button class="levelTwo-li-btn">Vietējie kravu pārvadājumi</button>
+                    </li>
+                </ul>
+            </li>
+            <li class="levelOne-li">
+                <button class="levelOne-li-btn">Noderīgi</button>
+            </li>
 
-        <button class="btn">Uzzināt cenu</button>
-    </ul>
+            <li><button class="btn desktop-mobile">Uzzināt cenu</button></li>
+        </ul>
 
-    <div class="head-wrap">
+
         <div class="dropdown">
             <a href="#" class="dropdown-active" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -231,8 +185,8 @@
             </ul>
         </div>
 
-        <button class="btn">Uzzināt cenu</button>
-        <button class="head-open">
+        <button class="btn desktop-btn">Uzzināt cenu</button>
+        <button class="header-toggler">
             <svg class="open-svg" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>DEDEC012-6711-4141-AC19-DDA20E21249C</title>
                 <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -249,7 +203,7 @@
                     </g>
                 </g>
             </svg>
-            <svg class="close-svg d-none" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg class="close-svg" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>05976A0B-BF16-4AC4-8ACD-9E3B4F908454</title>
                 <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="375px---Menu-dropdown" transform="translate(-335.000000, -24.000000)" stroke="#0F0F0F" stroke-width="2">
@@ -267,8 +221,7 @@
         </button>
     </div>
 
-    <div class="overlay d-none"></div>
-</div>
+</header>
 
 <div class="banner">
     <div class="video-bg">
@@ -314,7 +267,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="services-content-item">
                 <div class="services-content-item-wrap">
                     <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1516,7 +1468,7 @@
                     </g>
                 </svg>
                 <a class="data">+371 22 938 983</a>
-                <div class="contact-right-item-link">
+                <a href="#" class="contact-right-item-link">
                     <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>B0B9F2AE-CA4D-48C7-AD19-D75E7AEB7C40</title>
                         <defs>
@@ -1551,7 +1503,7 @@
                         <p class="contact-right-item-link-wrap-descr">Start chat using</p>
                         <p class="contact-right-item-link-wrap-title">WhatsApp</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="contact-right-item">
                 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1595,7 +1547,7 @@
                     </g>
                 </svg>
                 <p class="data">Brīvības iela 223, Rīga, Latvija</p>
-                <div class="contact-right-item-link">
+                <a href="#" class="contact-right-item-link">
                     <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>32865BB1-FD2E-47AD-B5FC-C05611CD4A84</title>
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -1623,8 +1575,8 @@
                         <p class="contact-right-item-link-wrap-descr">Get directions via</p>
                         <p class="contact-right-item-link-wrap-title">Waze</p>
                     </div>
-                </div>
-                <div class="contact-right-item-link">
+                </a>
+                <a href="#" class="contact-right-item-link">
                     <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>DF10B17B-D55A-4FCC-9F24-63D8FD72E346</title>
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -1658,7 +1610,7 @@
                         <p class="contact-right-item-link-wrap-descr">Get directions via</p>
                         <p class="contact-right-item-link-wrap-title">Google Maps</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -2013,7 +1965,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="js/more.js"></script>
-<script src="js/mobileHeader.js"></script>
+<!--<script src="js/mobileHeader.js"></script>-->
 <script src="js/swiperTwo.js"></script>
 <!--<script src="js/text.js"></script>-->
 <!--<script src="js/newText.js"></script>-->
@@ -2022,6 +1974,8 @@
 <!--<script src="js/textAnimation.js"></script>-->
 <script src="js/modal.js"></script>
 <script src="js/footer.js"></script>
+
+<script src="js/headers.js"></script>
 
 </body>
 </html>
