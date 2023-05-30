@@ -77,6 +77,14 @@ if (mediaQuery.matches) {
             const secondMenuLi = el.querySelectorAll('.levelTwo-li')
 
             secondMenuLi.forEach(two => {
+                const thirdMenu = two.querySelector('.levelThree')
+                const thirdMenuBtn = el.querySelector('.levelTwo')
+
+                if (thirdMenu) {
+                    two.classList.add('content-true-three')
+                }
+
+
                 two.addEventListener("click", () => {
                     two.classList.toggle("show-level")
                 })

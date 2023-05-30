@@ -156,6 +156,7 @@
                 padding: 0;
               }
 
+
               .levelThree {
                 display: none;
                 flex-direction: column;
@@ -199,6 +200,20 @@
 
               &:last-child {
                 padding-bottom: 0;
+              }
+            }
+
+            .content-true-three {
+
+              .levelTwo-li-btn {
+                position: relative;
+
+                &:after {
+                  position: absolute;
+                  content: url("../assets/icons/ic-footer-arrow (1).svg");
+                  right: -20px;
+                  top: -3px;
+                }
               }
             }
 

@@ -3135,6 +3135,15 @@ ul {
   .header-content-menu .levelOne-li .levelTwo-li:last-child {
     padding-bottom: 0;
   }
+  .header-content-menu .levelOne-li .levelTwo .content-true-three .levelTwo-li-btn {
+    position: relative;
+  }
+  .header-content-menu .levelOne-li .levelTwo .content-true-three .levelTwo-li-btn:after {
+    position: absolute;
+    content: url("../assets/icons/ic-footer-arrow (1).svg");
+    right: -20px;
+    top: -3px;
+  }
   .header-content-menu .levelOne-li .levelTwo .show-level .levelThree {
     opacity: 1;
     display: flex;
