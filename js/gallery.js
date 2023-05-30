@@ -1,21 +1,72 @@
-const largeWrap = document.querySelector(".gallery-large")
-const thumbs = document.querySelectorAll(".gallery-thumb-item")
+(function () {
+    const slides = document.querySelector(".gallery-lightbox-thumb");
+    const wrapper = document.querySelectorAll(".swiper-slide")
+    const current = document.querySelector('#current');
+    const modal = document.getElementById("modal");
+    const span = document.querySelectorAll(".close");
 
-let count = 0;
+    const swiper = new Swiper('.swiper-modal', {
+        initialSlide: 0,
+        loop: true,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 
-thumbs.forEach((el) => {
-    if (count < 5) {
-        const img = el.querySelector('img')
 
-        const imgCopy = document.createElement('img');
-        imgCopy.src = img.src;
-        imgCopy.addEventListener("click", () => {
-            largeWrap.innerHTML = el.innerHTML
+    wrapper.forEach((el, index) => {
+
+        const imgWrap = document.createElement("div")
+        imgWrap.classList.add("imgWrap")
+        imgWrap.setAttribute("data-swiper-length", wrapper.length)
+
+        const wrap = document.createElement("img")
+        wrap.src = el.firstElementChild.src
+        wrap.addEventListener('click', (e) => {
+            imgClick(e, index)
         })
 
-        el.appendChild(imgCopy);
-        count++;
-    }
-})
+        imgWrap.appendChild(wrap)
+        slides.appendChild(imgWrap)
+
+        function imgClick(e, index) {
+
+            if (index === 5) {
+                modal.classList.add("modal-show")
+                document.body.style.overflowY = "hidden";
+            }
 
 
+            current.src = e.target.src;
+
+            swiper.slideTo(index + 1)
+        }
+
+        swiper.on('transitionEnd', function() {
+            imgSearchByIndex(swiper.realIndex)
+        });
+
+
+        function imgSearchByIndex(id) {
+            if (index === id) {
+                current.src = el.firstElementChild.src;
+            }
+        }
+    })
+
+
+    current.addEventListener("click", () => {
+        modal.classList.add("modal-show")
+        document.body.style.overflowY = "hidden";
+    })
+
+
+    span.forEach(sp => {
+        sp.onclick = function() {
+            modal.classList.remove("modal-show")
+            document.body.style.overflowY = "unset";
+        }
+    })
+})()

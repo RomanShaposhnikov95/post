@@ -16,6 +16,7 @@ window.addEventListener('scroll', function() {
 if (mediaQuery.matches) {
     menuToggler.addEventListener("click", () => {
         header.classList.toggle('header-show')
+        document.body.classList.toggle('body-overflow')
     })
 
     levelOneMenu.forEach(el => {

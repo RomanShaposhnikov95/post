@@ -47,7 +47,7 @@
 
       &-hidden {
         margin-top: 14px;
-        transition: ease 0.3s;
+        transition: ease 0.7s;
         max-height: 0;
         visibility: hidden;
         &-descr {
@@ -70,24 +70,6 @@
           text-align: start;
         }
       }
-
-      //&:hover {
-      //  .services-content-item-wrap {
-      //    border-color: #6DD400;
-      //    background-color: #FFFFFF;
-      //    position: absolute;
-      //  }
-      //
-      //  svg {
-      //    path {
-      //      fill: #6DD400;
-      //    }
-      //  }
-      //
-      //  .services-content-item-hidden {
-      //    visibility: visible;
-      //  }
-      //}
 
       &:after {
         position: absolute;
