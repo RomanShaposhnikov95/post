@@ -3110,11 +3110,9 @@ ul {
     padding: 0;
   }
   .header-content-menu .levelOne-li .levelTwo-li .levelThree {
-    display: flex;
+    display: none;
     flex-direction: column;
     row-gap: 10px;
-    opacity: 0;
-    max-height: 0;
     transition: all 0.3s;
   }
   .header-content-menu .levelOne-li .levelTwo-li .levelThree .levelThree-li {
@@ -3134,16 +3132,13 @@ ul {
     top: -4px;
     left: 0;
   }
-  .header-content-menu .levelOne-li .levelTwo-li:hover {
-    overflow: visible;
-  }
-  .header-content-menu .levelOne-li .levelTwo-li:hover .levelThree {
-    opacity: 1;
-    max-height: 1000px;
-    margin-top: 14px;
-  }
   .header-content-menu .levelOne-li .levelTwo-li:last-child {
     padding-bottom: 0;
+  }
+  .header-content-menu .levelOne-li .levelTwo .show-level .levelThree {
+    opacity: 1;
+    display: flex;
+    margin-top: 14px;
   }
   .header-content-menu .levelOne-li:hover .levelOne-li-btn {
     color: #6DD400;

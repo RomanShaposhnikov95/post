@@ -73,8 +73,22 @@ if (mediaQuery.matches) {
 
         if (secondMenu) {
             btn.classList.add('content-true')
+
+            const secondMenuLi = el.querySelectorAll('.levelTwo-li')
+
+            secondMenuLi.forEach(two => {
+                two.addEventListener("click", () => {
+                    two.classList.toggle("show-level")
+                })
+            })
         }
+
+
+
+
     })
 }
+
+
 
 
