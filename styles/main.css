@@ -445,12 +445,15 @@ ul {
   height: 149px;
 }
 .services-content-item-wrap {
+  max-height: 149px;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #EEF0F1;
   padding: 30px 30px 26px 30px;
   border: 1px solid #EEF0F1;
+  transition: all 0.4s;
+  position: absolute;
 }
 .services-content-item-title {
   color: #0F0F0F;
@@ -484,20 +487,13 @@ ul {
   bottom: -26px;
   text-align: start;
 }
-.services-content-item:after {
-  position: absolute;
-  content: "";
-  bottom: calc(-100% - 100px);
-  height: calc(100% + 100px);
-  width: 100%;
-  background: white;
-}
 
 @media (min-width: 900px) {
   .services-content-item:hover .services-content-item-wrap {
     border-color: #6DD400;
     background-color: #FFFFFF;
     position: absolute;
+    max-height: 1000px;
   }
   .services-content-item:hover svg path {
     fill: #6DD400;
@@ -505,6 +501,24 @@ ul {
   .services-content-item:hover .services-content-item-hidden {
     visibility: visible;
     max-height: 1000px;
+  }
+  .services-content-item:hover:after {
+    position: absolute;
+    content: "";
+    bottom: calc(-100% - 100px);
+    height: calc(100% + 100px);
+    width: 100%;
+    background: white;
+    pointer-events: unset;
+  }
+  .services-content-item:after {
+    position: absolute;
+    content: "";
+    bottom: calc(-100% - 100px);
+    height: calc(100% + 100px);
+    width: 100%;
+    background: white;
+    pointer-events: none;
   }
 }
 @keyframes scroll {

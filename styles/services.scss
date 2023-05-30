@@ -27,12 +27,15 @@
       height: 149px;
 
       &-wrap {
+        max-height: 149px;
         bottom: 0;
         left: 0;
         right: 0;
         background-color: #EEF0F1;
         padding: 30px 30px 26px 30px;
         border: 1px solid #EEF0F1;
+        transition: all 0.4s;
+        position: absolute;
       }
 
       &-title {
@@ -88,15 +91,6 @@
       //    visibility: visible;
       //  }
       //}
-
-      &:after {
-        position: absolute;
-        content: "";
-        bottom: calc(-100% - 100px);
-        height: calc(100% + 100px);
-        width: 100%;
-        background: white;
-      }
     }
 
   }
@@ -112,7 +106,7 @@
             border-color: #6DD400;
             background-color: #FFFFFF;
             position: absolute;
-
+            max-height: 1000px;
           }
 
           svg {
@@ -126,6 +120,27 @@
             max-height: 1000px;
 
           }
+
+          &:after {
+            position: absolute;
+            content: "";
+            bottom: calc(-100% - 100px);
+            height: calc(100% + 100px);
+            width: 100%;
+            background: white;
+            pointer-events: unset;
+          }
+        }
+
+
+        &:after {
+          position: absolute;
+          content: "";
+          bottom: calc(-100% - 100px);
+          height: calc(100% + 100px);
+          width: 100%;
+          background: white;
+          pointer-events: none;
         }
       }
     }
