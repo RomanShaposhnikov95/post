@@ -177,6 +177,11 @@
                     letter-spacing: -0.2px;
                     line-height: 16px;
                     padding-left: 16px;
+                    transition: all 0.3s;
+
+                    &:hover {
+                      color: #6DD400;
+                    }
                   }
 
                   &:after {
@@ -207,12 +212,17 @@
 
               .levelTwo-li-btn {
                 position: relative;
+                transition: all 0.3s;
 
                 &:after {
                   position: absolute;
                   content: url("../assets/icons/ic-footer-arrow (1).svg");
                   right: -20px;
                   top: -3px;
+                }
+
+                &:hover {
+                  color: #6DD400;
                 }
               }
             }
@@ -324,6 +334,8 @@
           letter-spacing: -0.6px;
           line-height: 26px;
           padding: 0;
+          text-align: start;
+          background: transparent;
         }
 
 
@@ -376,6 +388,7 @@
   .back-menu {
     position: relative;
     padding-left: 30px;
+    background: transparent;
     button {
       color: #61646B !important;
 

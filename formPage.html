@@ -14,8 +14,9 @@
 </head>
 <body>
 
-<div class="head mobile">
-    <a href="#" class="head-logo">
+<header class="header">
+
+    <a href="#" class="header-logo">
         <svg width="112px" height="52px" viewBox="0 0 112 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>42F89DFD-F7A5-4ABE-8E98-FAE55A8DA81A</title>
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -31,94 +32,53 @@
             </g>
         </svg>
     </a>
-    <ul class="mobile-menu">
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu ">
-                <a href="#">Pakalpojumi</a>
-            </span>
-            <ul class="mobile-menu-dropdown-list">
-                <ul class="container">
-                    <li><button class="backToFirstMenu">back</button></li>
-                    <li class="menu-li">
-                        <span class="nextToThirdMenu">
-                            <a href="#">Kravu pārvadājumi</a>
-                        </span>
-                        <ul class="mobile-menu-dropdown-list-inside">
-                            <li><button class="backToSecondMenu">back</button></li>
-                            <li><a href="#">Vietējie kravu pārvadājumi</a></li>
-                            <li><a href="#">Vietējie kravu pārvadājumi</a></li>
-                            <li><a href="#">Vietējie kravu pārvadājumi</a></li>
+
+
+    <div class="header-content">
+
+        <ul class="header-content-menu levelOne">
+            <li class="levelOne-li">
+                <button class="levelOne-li-btn">Kravu pārvadājumi</button>
+                <ul class="levelTwo">
+                    <li class="levelTwo-li">
+                        <button class="levelTwo-li-btn">Starptautiskie kravu pārvadājumi</button>
+                        <ul class="levelThree">
+                            <li class="levelThree-li"><a href="#">Lielgabarīta pārvadājumi</a></li>
+                            <li class="levelThree-li"><a href="#">Negabarīta pārvadājumi</a></li>
                         </ul>
                     </li>
-
-                    <li class="menu-li">
-                        <span class="nextToThirdMenu">
-                            <a href="#">title2</a>
-                        </span>
-                        <ul class="mobile-menu-dropdown-list-inside">
-                            <li><button class="backToSecondMenu">back</button></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">test</a></li>
-                            <li><a href="#">test</a></li>
+                    <li class="levelTwo-li">
+                        <button class="levelTwo-li-btn">Vietējie kravu pārvadājumi</button>
+                        <ul class="levelThree">
+                            <li class="levelThree-li"><a href="#">1</a></li>
+                            <li class="levelThree-li"><a href="#">2</a></li>
                         </ul>
                     </li>
                 </ul>
-            </ul>
-        </li>
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu">
-                <a href="#">Transports</a>
-            </span>
-            <ul class="mobile-menu-dropdown-list">
-                <li><button class="backToFirstMenu">back</button></li>
-                <ul class="container">
-                    <li class="menu-li">
-                        <span class="nextToThirdMenu">
-                            <a href="#">title</a>
-                        </span>
-                        <ul class="mobile-menu-dropdown-list-inside">
-                            <li><button class="backToSecondMenu">back</button></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">title</a></li>
+            </li>
+            <li class="levelOne-li">
+                <button class="levelOne-li-btn">Kravu pārvadājumi two</button>
+                <ul class="levelTwo">
+                    <li class="levelTwo-li">
+                        <button class="levelTwo-li-btn">test</button>
+                        <ul class="levelThree">
+                            <li class="levelThree-li"><a href="#">Lielgabarīta pārvadājumi</a></li>
+                            <li class="levelThree-li"><a href="#">Negabarīta pārvadājumi</a></li>
                         </ul>
                     </li>
-                    <li class="menu-li">
-                        <span class="nextToThirdMenu">
-                            <a href="#">title</a>
-                        </span>
-                        <ul class="mobile-menu-dropdown-list-inside">
-                            <li><button class="backToSecondMenu">back</button></li>
-                            <li><a href="#">title</a></li>
-                            <li><a href="#">test</a></li>
-                        </ul>
+                    <li class="levelTwo-li">
+                        <button class="levelTwo-li-btn">Vietējie kravu pārvadājumi</button>
                     </li>
                 </ul>
-            </ul>
-        </li>
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu">
-                <a href="#">Noderīgi</a>
-            </span>
-        </li>
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu">
-                <a href="#">Jaunumi</a>
-            </span>
-        </li>
-        <li class="mobile-menu-dropdown">
-            <span class="nextToSecondMenu">
-                <a href="#">Kontakti</a>
-            </span>
-        </li>
+            </li>
+            <li class="levelOne-li">
+                <button class="levelOne-li-btn">Noderīgi</button>
+            </li>
 
-        <button class="btn">Uzzināt cenu</button>
-    </ul>
+            <li><button class="btn desktop-mobile">Uzzināt cenu</button></li>
+        </ul>
 
-    <div class="head-wrap">
+
         <div class="dropdown">
             <a href="#" class="dropdown-active" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -225,8 +185,8 @@
             </ul>
         </div>
 
-        <button class="btn">Uzzināt cenu</button>
-        <button class="head-open">
+        <button class="btn desktop-btn">Uzzināt cenu</button>
+        <button class="header-toggler">
             <svg class="open-svg" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>DEDEC012-6711-4141-AC19-DDA20E21249C</title>
                 <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -243,7 +203,7 @@
                     </g>
                 </g>
             </svg>
-            <svg class="close-svg d-none" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg class="close-svg" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>05976A0B-BF16-4AC4-8ACD-9E3B4F908454</title>
                 <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="375px---Menu-dropdown" transform="translate(-335.000000, -24.000000)" stroke="#0F0F0F" stroke-width="2">
@@ -261,8 +221,7 @@
         </button>
     </div>
 
-    <div class="overlay d-none"></div>
-</div>
+</header>
 
 <div class="contactBlock formPage-contactBlock">
     <div class="container">
@@ -281,12 +240,15 @@
 
 <div class="form formPage-form">
     <div class="container">
-        <form class="form-wrap">
+        <form action="#" class="form-wrap needs-validation" novalidate>
             <div class="form-wrap-section">
                 <h5 class="form-wrap-section-title">Piegāde no</h5>
                 <div class="form-wrap-section-inputs">
                     <div class="input-wrap required">
-                        <input placeholder="Adrese" type="text">
+                        <input placeholder="Adrese" type="text" required>
+                        <div class="invalid-feedback">
+                            Ir nepieciešams aizpildīt šo lauku.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -295,7 +257,10 @@
                 <h5 class="form-wrap-section-title">Piegāde uz</h5>
                 <div class="form-wrap-section-inputs">
                     <div class="input-wrap required">
-                        <input placeholder="Adrese" type="text">
+                        <input placeholder="Adrese" type="text" required>
+                        <div class="invalid-feedback">
+                            Šim laukam ir jābūt aizpildītam!
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,15 +269,24 @@
                 <h5 class="form-wrap-section-title">Nosūtītājs</h5>
                 <div class="form-wrap-section-inputs">
                     <div class="input-wrap required">
-                        <input placeholder="Vārds, uzvārds vai uzņēmuma nosaukums" type="text">
+                        <input class="form-control" placeholder="Vārds, uzvārds vai uzņēmuma nosaukums" type="text" required>
+                        <div class="invalid-feedback">
+                            Šim laukam ir jābūt aizpildītam!
+                        </div>
                     </div>
 
                     <div class="input-wrap-half required">
-                        <input placeholder="E-pasta adrese" type="email">
+                        <input placeholder="E-pasta adrese" type="email" required>
+                        <div class="invalid-feedback">
+                            Šim laukam ir jābūt aizpildītam!
+                        </div>
                     </div>
 
                     <div class="input-wrap-half required">
-                        <input placeholder="Tālruņa numurs" type="text">
+                        <input placeholder="Tālruņa numurs" type="text" required>
+                        <div class="invalid-feedback">
+                            Šim laukam ir jābūt aizpildītam!
+                        </div>
                     </div>
                 </div>
             </div>
@@ -322,7 +296,7 @@
                 <div class="form-wrap-section-inputs">
                     <div class="input-wrap-half">
                         <input placeholder="Svars" type="number">
-                        <p>kg</p>
+                        <span>kg</span>
                     </div>
 
                     <div class="input-wrap-half">
@@ -341,155 +315,188 @@
     </div>
 </div>
 
-<div class="questions more">
+<div class="contact">
     <div class="container">
-        <h3 class="title-m-light">Biežāk uzdotie jautājumi</h3>
+        <div class="contact-left">
+            <p class="title">Ir jautājumi? Saņemiet konsultāciju <span>4 stundu laikā</span></p>
+            <p class="descr">Sazinieties ar mums jums ērtākajā veidā – attālināti WhatsApp / Zoom / telefons / e-pasts vai klātienē</p>
 
-
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="more-visible">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                Kāpēc izdevīgāk izvēlēties salikto kravu pārvadājumus?
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, officia!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                Kādi kravu pārvadājumi tiek uzskatīti par bīstamiem jeb ADR?
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, officia!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="more-hidden more-hide">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                Kā tiek apdrošināta krava?
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, officia!
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="contact-left-group">
+                <a href="#" class="btn-black btn-hover">Uzzināt cenu</a>
+                <button class="btn-black btn-hover">Sazināties</button>
             </div>
+        </div>
 
-
-        <button class="link">
-            Rādīt vairāk
-            <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>FCDBC572-865E-4D01-8B62-FA49CEA867F1</title>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Home-v3---Comb-2" transform="translate(-257.000000, -7222.000000)" fill="#6DD400">
-                        <g id="FAQ" transform="translate(0.000000, 6636.000000)">
-                            <g id="Content" transform="translate(150.000000, 80.000000)">
-                                <g id="Link" transform="translate(0.000000, 504.000000)">
-                                    <polygon id="ic-more" points="116 2 116 8.999 123 9 123 11 116 10.999 116 18 114 18 114 10.999 107 11 107 9 114 8.999 114 2"></polygon>
+        <div class="contact-right">
+            <div class="contact-right-item">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>A141E3FE-8B7E-469D-8E9E-1C02DB1B970A</title>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Homepage---Renewed" transform="translate(-810.000000, -4906.000000)" fill="#0C0E12">
+                            <g id="Footer" transform="translate(0.000000, 4774.000000)">
+                                <g id="Content" transform="translate(150.000000, 70.000000)">
+                                    <g id="Right" transform="translate(660.000000, 54.000000)">
+                                        <g id="Icon" transform="translate(0.000000, 8.000000)">
+                                            <path d="M1,1 L7.84712709,1 L8.98639392,7.83560101 L7.01360608,8.16439899 L6.152,3 L3.011,3 L3.01505443,3.18903998 C3.32676026,15.2539905 8.49916155,20.5541444 20.4156626,20.9729061 L21,20.988 L21,17.847 L15.835601,16.9863939 L16.164399,15.0136061 L23,16.1528729 L23,23 L22,23 C7.5932381,23 1.12976476,16.6805943 1.00193597,2.43413883 L1,1 Z M22,2 L22,9 L20,9 L20,5.414 L14.7071068,10.7071068 L13.2928932,9.29289322 L18.584,4 L15,4 L15,2 L22,2 Z" id="icon"></path>
+                                        </g>
+                                    </g>
                                 </g>
                             </g>
                         </g>
                     </g>
-                </g>
-            </svg>
-        </button>
-    </div>
-</div>
+                </svg>
+                <a class="data">+371 22 938 983</a>
+                <a href="#" class="contact-right-item-link">
+                    <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>B0B9F2AE-CA4D-48C7-AD19-D75E7AEB7C40</title>
+                        <defs>
+                            <linearGradient x1="48.9819823%" y1="6.31837976%" x2="49.4888977%" y2="91.1582739%" id="linearGradient-1">
+                                <stop stop-color="#57D163" offset="0%"></stop>
+                                <stop stop-color="#23B33A" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Homepage---Renewed" transform="translate(-1039.000000, -4902.000000)">
+                                <g id="Footer" transform="translate(0.000000, 4774.000000)">
+                                    <g id="Content" transform="translate(150.000000, 70.000000)">
+                                        <g id="Right" transform="translate(660.000000, 54.000000)">
+                                            <g id="Button" transform="translate(225.000000, 0.000000)">
+                                                <g id="Icon" transform="translate(4.000000, 4.000000)">
+                                                    <circle id="path6" fill="#00B522" cx="16" cy="16" r="16"></circle>
+                                                    <path d="M10.82533,26.2162746 L5.24632698,27.6743716 L4,28 L4.34036121,26.7618487 L5.82818442,21.349309 L5.81378677,21.3233601 C4.94320993,19.7123796 4.46293082,17.9207164 4.41140647,16.0922464 L4.40677951,15.7490121 C4.40950544,9.2697 9.70044755,4 16.2038416,4 C19.357171,4.00159636 22.3214108,5.22579658 24.5480973,7.44593123 C26.7743662,9.66564956 28.0011196,12.6200055 28,15.7584823 C27.9971114,22.2373103 22.7054493,27.5079252 16.2033135,27.5079252 C14.342314,27.5071741 12.5143228,27.0707932 10.867472,26.2381039 L10.7903746,26.1977493 L10.82533,26.2162746 Z" id="path5" fill-opacity="0.1" fill="#3D4B66" fill-rule="nonzero"></path>
+                                                    <path d="M16.2034638,4.7410117 C10.1109561,4.7410117 5.15306673,9.67926071 5.15051298,15.7493227 C5.14817259,17.6812061 5.65704479,19.5795637 6.62583208,21.2530292 L5.05767649,26.9575944 L10.9168911,25.4267582 C12.5313147,26.303831 14.3488369,26.766165 16.2033135,26.7669134 C22.2949198,26.7669134 27.2535603,21.8277664 27.2562665,15.7581533 C27.2573158,12.8165171 26.1090275,10.0505948 24.022009,7.96971715 C21.9349906,5.88883954 19.1599606,4.74250841 16.2034638,4.7410117 Z" id="path4" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                                    <path d="M16.2067686,6.60062462 C11.1393682,6.60062462 7.01835921,10.7051066 7.01653753,15.7500711 C7.01406094,17.4727826 7.50096221,19.1610231 8.42097142,20.6196211 L8.63954277,20.9658103 L7.71132805,24.3420915 L11.1883402,23.4337375 L11.5240838,23.6319021 C12.9342071,24.4657199 14.5510342,24.906651 16.1998584,24.907549 L16.2033135,24.907549 C21.2668082,24.907549 25.3878172,20.8026688 25.3898612,15.757405 C25.3974935,13.3284683 24.4294875,10.9974256 22.7015676,9.28397927 C20.9832324,7.56116191 18.6445106,6.59492704 16.2067686,6.60062462 L16.2067686,6.60062462 Z" id="path3" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                                                    <path d="M16.2067686,6.60062462 C11.1393682,6.60062462 7.01835921,10.7051066 7.01653753,15.7500711 C7.01406094,17.4727826 7.50096221,19.1610231 8.42097142,20.6196211 L8.63954277,20.9658103 L7.71132805,24.3420915 L11.1883402,23.4337375 L11.5240838,23.6319021 C12.9342071,24.4657199 14.5510342,24.906651 16.1998584,24.907549 L16.2033135,24.907549 C21.2668082,24.907549 25.3878172,20.8026688 25.3898612,15.757405 C25.3974935,13.3284683 24.4294875,10.9974256 22.7015676,9.28397927 C20.9832324,7.56116191 18.6445106,6.59492704 16.2067686,6.60062462 L16.2067686,6.60062462 Z" id="path2" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero"></path>
+                                                    <path d="M13.440902,11.1470854 C13.2338977,10.6889421 13.0160775,10.6796625 12.8194384,10.6717299 L12.29006,10.6652941 C12.1058893,10.6652941 11.8066493,10.7341428 11.5536773,11.0095376 C11.3007054,11.2849325 10.5870061,11.95052 10.5870061,13.3042953 C10.5870061,14.6580706 11.5766611,15.9661962 11.7145639,16.1499923 C11.8524666,16.3337885 13.6250728,19.2004395 16.4322501,20.303366 C18.7650299,21.2199519 19.2397278,21.0376525 19.7462726,20.9918531 C20.2528174,20.9460538 21.380225,20.3262656 21.6102131,19.6837275 C21.8402013,19.0411894 21.8403514,18.490699 21.7714001,18.3756019 C21.7024487,18.2605048 21.5182779,18.1921051 21.2418715,18.0544077 C20.9654651,17.9167103 19.6079192,17.2511228 19.354797,17.1592247 C19.1016749,17.0673266 18.9176543,17.0216769 18.7333333,17.2970718 C18.5490123,17.5724667 18.0203851,18.1919555 17.8591981,18.3756019 C17.6980111,18.5592484 17.5371246,18.5822978 17.2607182,18.44475 C16.9843118,18.3072022 16.0950043,18.0165409 15.0398529,17.0791506 C14.2188959,16.3498033 13.6647311,15.4490824 13.5033939,15.1738372 C13.3420567,14.8985921 13.4862687,14.7495197 13.6247724,14.6124209 C13.7487046,14.4890919 13.9008783,14.291077 14.0392318,14.1304799 C14.1775852,13.9698828 14.2231021,13.855085 14.3150373,13.6717379 C14.4069724,13.4883907 14.361155,13.3273447 14.2920534,13.1897969 C14.2229518,13.0522492 13.686363,11.6914393 13.440902,11.1472351" id="path1" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
 
-<div class="info more">
-    <div class="container">
-        <h3 class="title-m-light">
-            Starptautiskie un vietējie kravu pārvādājumi
-        </h3>
-
-        <div class="more-visible">
-            <p class="info-descr">
-                PostHaul piedāvā augstas kvalitātes starptautiskos autotransporta pakalpojumus. Sauszemes transports ir
-                elastīgākais transporta veids, jo kravas automašīnas var nokļūt visur –
-                Jūs varat pārvietot kravu no jebkuras vietas uz vēlamo piegādes vietu.
-            </p>
-
-            <p class="info-descr">
-                Mūsu rīcībā ir plašs autoparks, kas ļauj ar viszemākajiem iepakošanas
-                izdevumiem ātri nosūtīt un izkraut gan lielas, gan mazas kravas.
-                Piegādi Baltijas reģionā varam nodrošināt nākamā darbdienā pēc pasūtījuma apstiprināšanas.
-            </p>
-        </div>
-
-        <div class="more-hidden more-hide">
-            <p class="info-descr">
-                Mūsu rīcībā ir plašs autoparks, kas ļauj ar viszemākajiem iepakošanas
-                izdevumiem ātri nosūtīt un izkraut gan lielas, gan mazas kravas.
-                Piegādi Baltijas reģionā varam nodrošināt nākamā darbdienā pēc pasūtījuma apstiprināšanas.
-                Mūsu rīcībā ir plašs autoparks, kas ļauj ar viszemākajiem iepakošanas
-            </p>
-        </div>
-
-        <button class="link">
-            Lasīt vairāk
-            <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>FCDBC572-865E-4D01-8B62-FA49CEA867F1</title>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Home-v3---Comb-2" transform="translate(-257.000000, -7222.000000)" fill="#6DD400">
-                        <g id="FAQ" transform="translate(0.000000, 6636.000000)">
-                            <g id="Content" transform="translate(150.000000, 80.000000)">
-                                <g id="Link" transform="translate(0.000000, 504.000000)">
-                                    <polygon id="ic-more" points="116 2 116 8.999 123 9 123 11 116 10.999 116 18 114 18 114 10.999 107 11 107 9 114 8.999 114 2"></polygon>
+                    <div class="contact-right-item-link-wrap">
+                        <p class="contact-right-item-link-wrap-descr">Start chat using</p>
+                        <p class="contact-right-item-link-wrap-title">WhatsApp</p>
+                    </div>
+                </a>
+            </div>
+            <div class="contact-right-item">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>734CC63C-9F63-44A1-999B-9A566F87FAD3</title>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Homepage---Renewed" transform="translate(-810.000000, -4960.000000)" fill="#0C0E12">
+                            <g id="Footer" transform="translate(0.000000, 4774.000000)">
+                                <g id="Content" transform="translate(150.000000, 70.000000)">
+                                    <g id="Right" transform="translate(660.000000, 54.000000)">
+                                        <g id="Email" transform="translate(0.000000, 60.000000)">
+                                            <g id="Icon" transform="translate(0.000000, 2.000000)">
+                                                <path d="M1,8.7 L12,2 L23,8.7 L23,23 L1,23 L1,8.7 Z M21,21 L21,11.14 L12,16 L3,11.141 L3,21 L21,21 Z M12,4.44065556 L3.743,9.22 L12,13.5583444 L20.256,9.22 L12,4.44065556 Z" id="icon"></path>
+                                            </g>
+                                        </g>
+                                    </g>
                                 </g>
                             </g>
                         </g>
                     </g>
-                </g>
-            </svg>
-        </button>
+                </svg>
+                <a class="data">info@posthaul.com</a>
+
+            </div>
+            <div class="contact-right-item">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>9322DE3E-56A0-485C-A6CE-72A1002F9B08</title>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Homepage---Renewed" transform="translate(-810.000000, -5016.000000)" fill="#0C0E12">
+                            <g id="Footer" transform="translate(0.000000, 4774.000000)">
+                                <g id="Content" transform="translate(150.000000, 70.000000)">
+                                    <g id="Right" transform="translate(660.000000, 54.000000)">
+                                        <g id="Location" transform="translate(0.000000, 110.000000)">
+                                            <g id="Icon" transform="translate(0.000000, 8.000000)">
+                                                <path d="M23,1 L23,19.1428571 L14.9676208,22.5853054 L8.967,19.585461 L1,23 L1,4.857143 L9.0323792,1.414695 L15.032,4.414539 L23,1 Z M8,4.032 L3,6.175539 L3,19.966461 L8,17.823922 L8,4.032 Z M21,4.032539 L16,6.175 L16,19.964922 L21,17.823461 L21,4.032539 Z M10,4.134 L10,17.864922 L14,19.863922 L14,6.134 L10,4.134 Z" id="icon"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p class="data">Brīvības iela 223, Rīga, Latvija</p>
+                <a href="#" class="contact-right-item-link">
+                    <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>32865BB1-FD2E-47AD-B5FC-C05611CD4A84</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Homepage---Renewed" transform="translate(-1160.000000, -5012.000000)">
+                                <g id="Footer" transform="translate(0.000000, 4774.000000)">
+                                    <g id="Content" transform="translate(150.000000, 70.000000)">
+                                        <g id="Right" transform="translate(660.000000, 54.000000)">
+                                            <g id="Location" transform="translate(0.000000, 110.000000)">
+                                                <g id="Buttons" transform="translate(346.000000, 0.000000)">
+                                                    <g id="Icon" transform="translate(4.000000, 4.000000)">
+                                                        <circle id="path4" fill="#00CFFF" cx="16" cy="16" r="16"></circle>
+                                                        <path d="M16.896,8.07785305 C14.7052144,8.0735808 12.6352609,9.08139383 11.2874667,10.8085333 C10.3310141,12.0405817 9.81198634,13.5560075 9.81226667,15.1157333 L9.81226667,16.4192 C9.81226667,16.9845333 9.5904,17.5253333 9.2224,17.9189333 C8.92997882,18.2147003 8.5639868,18.4271524 8.16213333,18.5344 C8.30933333,18.9034667 8.6528,19.4688 9.26826667,20.0842667 C9.78453333,20.6250667 10.4,21.0688 11.0656,21.3877333 L11.0656,21.3621333 C11.4748151,20.7281439 12.1798351,20.3474653 12.9344,20.3530667 C13.0816,20.3530667 13.2064,20.3776 13.3536,20.4032 C14.2378667,20.5749333 14.928,21.2661333 15.0997333,22.1248 L16.9216,22.1248 C18.816,22.1248 20.6122667,21.3376 21.9157333,20.0597333 C23.9338667,18.0405333 24.5472,15.0154667 23.4410667,12.4096 C22.3371599,9.77472831 19.7538075,8.06512589 16.8970667,8.07893333 L16.896,8.07785305 Z" id="path3" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                                        <path d="M16.896,7.19357112 C14.4521138,7.1870289 12.1403051,8.30204411 10.624,10.2186667 C9.52043359,11.620095 8.92277759,13.3532974 8.928,15.1370667 L8.928,16.416 C8.928,17.0816 8.45866667,17.6938667 7.54986667,17.744 C7.32984294,17.7477417 7.14875582,17.9182038 7.13173333,18.1376 C7.10613333,18.7285333 7.7472,19.8336 8.63146667,20.7221333 C9.24668539,21.3270576 9.95194531,21.8329736 10.7221333,22.2218667 C10.4746667,23.5754667 11.5338667,24.8064 12.912,24.8064 L12.9376,24.8064 C13.9968,24.8064 14.8810667,24.0682667 15.1029333,23.0592 L16.9472,23.0592 C17.1434667,24.0682667 18.0277333,24.8064 19.1125333,24.8064 C19.3589333,24.8064 19.6277333,24.7562667 19.8752,24.6848 C20.4858164,24.486226 20.9679576,24.012772 21.1776,23.4058667 C21.3623534,22.8885336 21.3623534,22.3231998 21.1776,21.8058667 C21.6682667,21.488 22.112,21.1402667 22.5312,20.7253333 C24.0267261,19.2517403 24.8686175,17.2398082 24.8682668,15.1402667 C24.8682668,13.0250667 24.0309333,11.056 22.5312,9.55626667 C21.0314667,8.0032 19.0122667,7.19357112 16.8970667,7.19357112 L16.896,7.19357112 Z M16.896,8.07893333 C19.7539825,8.08262831 22.3320835,9.79688056 23.4410667,12.4309333 C24.5430849,15.0531456 23.9391668,18.0820272 21.9157333,20.0810667 C20.5900261,21.4035196 18.7941333,22.1465022 16.9216,22.1472 L15.0997333,22.1472 C14.9267885,21.2688234 14.2342361,20.5855783 13.3536,20.4245333 C13.2064,20.4 13.0816,20.3754667 12.9344,20.3754667 C12.1973333,20.3754667 11.4837333,20.7434667 11.0656,21.3845333 L11.0656,21.4090667 C10.4077169,21.0624291 9.802534,20.623896 9.26826667,20.1066667 C8.6528,19.4901333 8.30933333,18.9002667 8.16213333,18.5557333 C8.58133333,18.4597333 8.9248,18.2378667 9.2224,17.9402667 C9.5904,17.5221333 9.81226667,17.0058667 9.81226667,16.4405333 L9.81226667,15.1370667 C9.81226667,13.5872 10.3285333,12.0629333 11.2874667,10.8309333 C12.6656,9.03786667 14.7093333,8.07893333 16.8970667,8.07893333 L16.896,8.07893333 Z" id="path2" fill="#191938" fill-rule="nonzero"></path>
+                                                        <path d="M20.4405333,12.4565333 C19.9498667,12.4565333 19.5562667,12.8501333 19.5562667,13.3408 C19.5562667,13.8314667 19.9509333,14.2250667 20.4416,14.2250667 C20.9312,14.2250667 21.3248,13.8304 21.3248,13.3397333 C21.3248,12.8490667 20.9344,12.4565333 20.4405333,12.4565333 L20.4405333,12.4565333 Z M15.1285333,12.4565333 C14.6378667,12.4565333 14.2432,12.8501333 14.2432,13.3408 C14.2432,13.8314667 14.6378667,14.2250667 15.1285333,14.2250667 C15.6192,14.2250667 16.0128,13.8304 16.0128,13.3397333 C16.0128,12.8490667 15.6181333,12.4565333 15.1274667,12.4565333 L15.1285333,12.4565333 Z M14.9781333,15.9754667 C14.6592,15.9754667 14.4373333,16.2933333 14.5834667,16.5909333 C15.1703885,17.8246266 16.4151434,18.6101756 17.7813333,18.6090678 C19.1562667,18.6090678 20.3872,17.8218667 20.9781333,16.5909333 C21.0997333,16.2965333 20.9034667,15.9754667 20.5834667,15.9754667 C20.4162807,15.9758182 20.2639241,16.0714551 20.1909333,16.2218667 C19.7443674,17.1348634 18.8190092,17.7159503 17.8026667,17.7216 C16.768,17.7216 15.8346667,17.1317333 15.4154667,16.2218667 C15.3242656,16.067411 15.1574937,15.9734492 14.9781333,15.9754667 L14.9781333,15.9754667 Z" id="path1" fill="#191938" fill-rule="nonzero"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="contact-right-item-link-wrap">
+                        <p class="contact-right-item-link-wrap-descr">Get directions via</p>
+                        <p class="contact-right-item-link-wrap-title">Waze</p>
+                    </div>
+                </a>
+                <a href="#" class="contact-right-item-link">
+                    <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>DF10B17B-D55A-4FCC-9F24-63D8FD72E346</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Homepage---Renewed" transform="translate(-1296.000000, -5012.000000)" fill-rule="nonzero">
+                                <g id="Footer" transform="translate(0.000000, 4774.000000)">
+                                    <g id="Content" transform="translate(150.000000, 70.000000)">
+                                        <g id="Right" transform="translate(660.000000, 54.000000)">
+                                            <g id="Location" transform="translate(0.000000, 110.000000)">
+                                                <g id="Buttons" transform="translate(346.000000, 0.000000)">
+                                                    <g id="Button-(Google)" transform="translate(136.000000, 0.000000)">
+                                                        <g id="Icon" transform="translate(4.000000, 4.000000)">
+                                                            <path d="M16.0000161,3.8872372e-07 C20.0992158,3.8872372e-07 23.8378822,1.54133367 26.6688154,4.07573358 L16.0000161,16.0000004 L4.0757502,26.6687995 C1.44608713,23.7379966 -0.00575373051,19.9376007 5.68434189e-14,16.0000004 C5.68434189e-14,7.16373347 7.16374999,3.8872372e-07 16.0000161,3.8872372e-07 Z" id="path8" fill="#00A750"></path>
+                                                            <path d="M16.0000161,15.9999998 L26.6677487,27.9253328 C23.737061,30.5543627 19.9371082,32.0057996 16.0000161,32.0000166 C12.0624153,32.0057702 8.26201956,30.5539292 5.33121678,27.9242661 L16.0000161,15.9999998 Z" id="path7" fill="#009CE9"></path>
+                                                            <path d="M27.9242819,5.3312002 C30.553945,8.26200308 32.0057859,12.062399 32.0000321,15.9999998 C32.0000321,20.098133 30.4586818,23.8367996 27.9253486,26.6677328 L16.0000161,15.9999998 L27.9242819,5.3312002 Z" id="path6" fill="#8A8791"></path>
+                                                            <path d="M16.8426827,14.3157332 L28.5066819,25.9807995 C27.6981577,26.9920927 26.7705653,27.9021361 25.7440154,28.6911994 L13.8944162,16.8426665 L16.841616,14.3167999 L16.8426827,14.3157332 Z" id="path5" fill="#F1F1F1"></path>
+                                                            <path d="M25.9808154,3.4933336 C26.9924832,4.30179243 27.9028873,5.2293875 28.6922819,6.25600017 L6.25601672,28.6933327 C5.22940408,27.9039381 4.30180904,26.993534 3.49335024,25.9818662 L25.9808154,3.4933336 Z" id="path4" fill="#FFCC00"></path>
+                                                            <path d="M9.26934985,9.69173339 L9.26934985,11.0645333 L11.1765497,11.0645333 C11.0250831,11.8794666 10.3093498,12.4725333 9.26934985,12.4725333 C8.11308326,12.4725333 7.17228332,11.4922667 7.17228332,10.3392 C7.17228332,9.18720007 8.11308326,8.20693344 9.26934985,8.20693344 C9.79201648,8.20693344 10.2549498,8.38826677 10.6250831,8.73493342 L11.6405497,7.72160012 C11.0008977,7.11568978 10.1503526,6.78281787 9.26934985,6.79360015 C8.3295755,6.79303398 7.42811365,7.16603415 6.76349269,7.83045507 C6.09887173,8.49487599 5.72560019,9.39622552 5.72588278,10.336 C5.72531701,11.2759593 6.09846354,12.177583 6.76311523,12.8422347 C7.42776691,13.5068864 8.3293906,13.880033 9.26934985,13.8794672 C11.3152164,13.8794672 12.6709496,12.4394666 12.6709496,10.4170667 C12.6709496,10.1653334 12.6485496,9.92426671 12.6069496,9.69173339 L9.26934985,9.69173339 L9.26934985,9.69173339 Z" id="path3" fill="#EEEEEE"></path>
+                                                            <path d="M24.7616155,0 C23.2055053,-0.000565778399 21.7129668,0.61734585 20.6126307,1.71768199 C19.5122946,2.81801812 18.894383,4.31055667 18.8949488,5.86666685 C18.8949488,10.2869334 23.8325489,12.5898666 24.4160155,18.8991997 C24.4331807,19.077517 24.5830073,19.2136136 24.7621488,19.2136136 C24.9412903,19.2136136 25.091117,19.077517 25.1082821,18.8991997 C25.6917488,12.5898666 30.6282818,10.2869334 30.6282818,5.86666685 C30.6282818,2.62506696 28.0032153,0 24.7616155,0 L24.7616155,0 Z" id="path2" fill="#DF0000"></path>
+                                                            <ellipse id="path1" fill="#960800" cx="24.7616155" cy="5.86666685" rx="2.0533332" ry="2.05333326"></ellipse>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="contact-right-item-link-wrap">
+                        <p class="contact-right-item-link-wrap-descr">Get directions via</p>
+                        <p class="contact-right-item-link-wrap-title">Google Maps</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="footer">
-    <div class="container">
-        <div class="footer-top">
-            <div class="footer-top-question">
-                <h3 class="footer-top-title">
-                    Ir jautājumi?
-                    <br>
-                    <span>Saņemiet konsultāciju 4 stundu laikā</span>
-                </h3>
-
-                <div class="footer-top-wrap">
-                    <button class="btn-black">Uzdot jautājumu</button>
-                    <button class="btn-white">Uzzināt cenu</button>
-                </div>
-            </div>
-
-            <div class="footer-top-offers">
-                <h3 class="footer-top-title">
-                    Vēlies saņemt izdevīgus pārvadājuma piedāvājumus?
-                    <br>
-                    <span>Pieraksties jaunumu saņemšanai</span>
-                </h3>
-
-                <form class="footer-top-wrap">
-                    <input placeholder="Tava e-pasta adrese" type="email">
-                    <div class="btn">Pierakstīties</div>
-                </form>
-            </div>
-        </div>
-
-        <div class="footer-menu">
+    <div class="footer-menu">
+        <div class="container">
             <a href="#" class="footer-menu-logo">
                 <svg width="112px" height="52px" viewBox="0 0 112 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>58FBB7F4-9A02-4E8B-9940-14662C26B1AF</title>
@@ -506,153 +513,101 @@
                     </g>
                 </svg>
             </a>
+        </div>
+        <div class="container">
+            <ul class="footer-menu-list">
+                <h3 class="footer-menu-list-title">Pakalpojumi</h3>
+                <li class="btn-group">
+                    <button route="#route" type="button" class="footer-link dd-open" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>Starptautiskie kravu pārvadājumi</span>
+                        <svg width="9.70710678px" height="5.56066017px" viewBox="0 0 9.70710678 5.56066017" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>8DBC25FF-40A3-4A6F-93B1-59C0468750A3</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Homepage---Renewed" transform="translate(-327.646447, -5647.643426)" stroke="#8CD9CC">
+                                    <g id="Footer" transform="translate(0.000000, 4632.000000)">
+                                        <g transform="translate(0.000000, 382.000000)" id="Content">
+                                            <g transform="translate(150.000000, 60.000000)">
+                                                <g id="Columns" transform="translate(0.000000, 101.996979)">
+                                                    <g id="Content" transform="translate(0.000000, 45.000000)">
+                                                        <g id="Links" transform="translate(0.000000, 167.000000)">
+                                                            <g id="Dropdown-value" transform="translate(0.000000, 252.000000)">
+                                                                <polyline id="ic-footer-arrow" points="178 8 182.5 12.5 187 8"></polyline>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Действие</a></li>
+                        <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </li>
+                <li><a class="footer-link" href="">Vietējie kravu pārvadājumi</a></li>
+                <li><a class="footer-link" href="">Pilno kravu pārvadājumi</a></li>
+                <li><a class="footer-link" href="">Salikto kravu pārvadājumi</a></li>
+                <li><a class="footer-link" href="">Konteineru pārvadājumi</a></li>
+                <li><a class="footer-link" href="">Sauszemes kravu pārvadājumi</a></li>
+                <li><a class="footer-link" href="">Jūras kravu pārvadājumi</a></li>
+
+                <li><a class="footer-link" href="">Avio kravu pārvadājumi</a></li>
+                <li><a class="footer-link" href="">Bīstamo kravu pārvadājumi</a></li>
+                <li><a class="footer-link" href="">Smagsvara pārvadājumi</a></li>
+                <li><a class="footer-link" href="">Pavadošais transports</a></li>
+            </ul>
+
+            <ul class="footer-menu-list">
+                <h3 class="footer-menu-list-title">Loģistikas pakalpojumi</h3>
+                <li><a class="footer-link" href="">Kravu apdrošināšana</a></li>
+                <li><a class="footer-link" href="">Muitas brokeru pakalpojumi</a></li>
+                <li><a class="footer-link" href="">Kravu iekraušana / izkraušana</a></li>
+                <li><a class="footer-link" href="">Projektu loģistika</a></li>
+            </ul>
+
+            <ul class="footer-menu-list">
+                <h3 class="footer-menu-list-title">Noliktavas pakalpojumi</h3>
+                <li><a class="footer-link" href="">Noliktavas īre</a></li>
+                <li><a class="footer-link" href="">Noliktavas noma</a></li>
+            </ul>
 
             <ul class="footer-menu-list">
                 <h3 class="footer-menu-list-title">Noderīgi</h3>
-                <li><a href="">Pakalpojumi</a></li>
-                <li><a href="">Cenrādis</a></li>
-                <li><a href="">Transportu izmēri</a></li>
-                <li><a href="">Rekvizīti</a></li>
-                <li><a href="">Par mums</a></li>
-                <li><a href="">Privātuma politika</a></li>
-                <li><a href="">Sīkdatnes izmantošana</a></li>
+                <li><a class="footer-link" href="">Kravu transportēšanas veidi</a></li>
+                <li><a class="footer-link" href="">Inkotermi</a></li>
+                <li><a class="footer-link" href="">Konvencija par kravu starptautisko autopārvadājumu līgumu (CMR konvencija)</a></li>
+                <li><a class="footer-link" href="">Noteikumi par lielgabarīta un smagsvara pārvadājumiem</a></li>
+                <li><a class="footer-link" href="">Biežāk uzdotie jautājumi (BUJ)</a></li>
             </ul>
 
             <ul class="footer-menu-list">
-                <h3 class="footer-menu-list-title">Lietotāju atbalsts</h3>
-                <li><a href="">Apkalpošanas noteikumi</a></li>
-                <li><a href="">Pakalpojumu izmantošanas līgums</a></li>
-                <li><a href="">Noliktavas nomas līgums</a></li>
-                <li><a href="">Naudas atgriešanas akts (COD)</a></li>
-                <li><a href="">Pretenziju veidlapa</a></li>
-                <li><a href="">Informācija fiziskām personām</a></li>
+                <h3 class="footer-menu-list-title">Par mums</h3>
+                <li><a class="footer-link" href="">Mūsu komanda</a></li>
+                <li><a class="footer-link" href="">Klientu atsauksmes</a></li>
+                <li><a class="footer-link" href="">Vakances</a></li>
+                <li><a class="footer-link" href="">Rekvizīti</a></li>
+                <li><a class="footer-link" href="">Kontakti</a></li>
             </ul>
 
-            <div class="footer-menu-list">
-                <h3 class="footer-menu-list-title">Kontakti</h3>
-                <div class="footer-menu-list-item">
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>2AF5671E-66C0-4865-94AF-B9D68EF7C2F9</title>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Home-v3---Comb-2" transform="translate(-1140.000000, -8187.000000)" fill="#6DD400">
-                                <g id="Footer" transform="translate(0.000000, 7732.000000)">
-                                    <g id="Content-2" transform="translate(150.000000, 364.000000)">
-                                        <g id="Col-3" transform="translate(990.000000, 0.000000)">
-                                            <g id="Content" transform="translate(0.000000, 81.000000)">
-                                                <g id="Icon" transform="translate(0.000000, 10.000000)">
-                                                    <path d="M1,1 L7.84712709,1 L8.98639392,7.83560101 L7.01360608,8.16439899 L6.152,3 L3.011,3 L3.01505443,3.18903998 C3.32676026,15.2539905 8.49916155,20.5541444 20.4156626,20.9729061 L21,20.988 L21,17.847 L15.835601,16.9863939 L16.164399,15.0136061 L23,16.1528729 L23,23 L22,23 C7.5932381,23 1.12976476,16.6805943 1.00193597,2.43413883 L1,1 Z M22,2 L22,9 L20,9 L20,5.414 L14.7071068,10.7071068 L13.2928932,9.29289322 L18.584,4 L15,4 L15,2 L22,2 Z" id="icon"></path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="footer-menu-list-item-wrap">
-                        <p class="footer-menu-list-item-wrap-title">
-                            Tālrunis
-                        </p>
-
-                        <a class="footer-menu-list-item-wrap-link" href="#">+371 22 938 983</a>
-                    </div>
-                </div>
-                <div class="footer-menu-list-item">
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>7CD54511-D7E3-4DFE-9F37-313259C4859B</title>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Home-v3---Comb-2" transform="translate(-1140.000000, -8257.000000)" fill="#6DD400">
-                                <g id="Footer" transform="translate(0.000000, 7732.000000)">
-                                    <g id="Content-2" transform="translate(150.000000, 364.000000)">
-                                        <g id="Col-3" transform="translate(990.000000, 0.000000)">
-                                            <g id="Content" transform="translate(0.000000, 81.000000)">
-                                                <g id="Block-2" transform="translate(0.000000, 68.000000)">
-                                                    <g id="Icon" transform="translate(0.000000, 12.000000)">
-                                                        <path d="M1,8.7 L12,2 L23,8.7 L23,23 L1,23 L1,8.7 Z M21,21 L21,11.14 L12,16 L3,11.141 L3,21 L21,21 Z M12,4.44065556 L3.743,9.22 L12,13.5583444 L20.256,9.22 L12,4.44065556 Z" id="icon"></path>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="footer-menu-list-item-wrap">
-                        <p class="footer-menu-list-item-wrap-title">
-                            E-pasta adrese
-                        </p>
-
-                        <a class="footer-menu-list-item-wrap-link" href="#">info@posthaul.com</a>
-                    </div>
-                </div>
-                <div class="footer-menu-list-item">
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>9854653F-F834-4944-8BD3-BC58219CFAAA</title>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Home-v3---Comb-2" transform="translate(-1140.000000, -8338.000000)" fill="#6DD400">
-                                <g id="Footer" transform="translate(0.000000, 7732.000000)">
-                                    <g id="Content-2" transform="translate(150.000000, 364.000000)">
-                                        <g id="Col-3" transform="translate(990.000000, 0.000000)">
-                                            <g id="Content" transform="translate(0.000000, 81.000000)">
-                                                <g id="Block-3" transform="translate(0.000000, 136.000000)">
-                                                    <g id="Icon" transform="translate(0.000000, 25.000000)">
-                                                        <path d="M23,1 L23,19.1428571 L14.9676208,22.5853054 L8.967,19.585461 L1,23 L1,4.857143 L9.0323792,1.414695 L15.032,4.414539 L23,1 Z M8,4.032 L3,6.175539 L3,19.966461 L8,17.823922 L8,4.032 Z M21,4.032539 L16,6.175 L16,19.964922 L21,17.823461 L21,4.032539 Z M10,4.134 L10,17.864922 L14,19.863922 L14,6.134 L10,4.134 Z" id="icon"></path>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="footer-menu-list-item-wrap">
-                        <p class="footer-menu-list-item-wrap-title">
-                            Noliktavas adrese
-                        </p>
-
-                        <a class="footer-menu-list-item-wrap-link" href="#">Uriekstes iela 1, Rīga, LV-1005, Latvija</a>
-                    </div>
-                </div>
-                <div class="footer-menu-list-item">
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>9854653F-F834-4944-8BD3-BC58219CFAAA</title>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Home-v3---Comb-2" transform="translate(-1140.000000, -8338.000000)" fill="#6DD400">
-                                <g id="Footer" transform="translate(0.000000, 7732.000000)">
-                                    <g id="Content-2" transform="translate(150.000000, 364.000000)">
-                                        <g id="Col-3" transform="translate(990.000000, 0.000000)">
-                                            <g id="Content" transform="translate(0.000000, 81.000000)">
-                                                <g id="Block-3" transform="translate(0.000000, 136.000000)">
-                                                    <g id="Icon" transform="translate(0.000000, 25.000000)">
-                                                        <path d="M23,1 L23,19.1428571 L14.9676208,22.5853054 L8.967,19.585461 L1,23 L1,4.857143 L9.0323792,1.414695 L15.032,4.414539 L23,1 Z M8,4.032 L3,6.175539 L3,19.966461 L8,17.823922 L8,4.032 Z M21,4.032539 L16,6.175 L16,19.964922 L21,17.823461 L21,4.032539 Z M10,4.134 L10,17.864922 L14,19.863922 L14,6.134 L10,4.134 Z" id="icon"></path>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="footer-menu-list-item-wrap">
-                        <p class="footer-menu-list-item-wrap-title">
-                            Biroja adrese
-                        </p>
-
-                        <a class="footer-menu-list-item-wrap-link" href="#">Ganību dambis 27 k-5, Rīga, LV-1005, Latvija</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
     <div class="footer-bottom">
-       <div class="container">
-           <p class="footer-bottom-text">© 2023 Posthaul. All Rights Reserved.</p>
-           <p class="footer-bottom-text">Mājas lapas izstrāde no <a href="#">Datateks</a></p>
-       </div>
+        <div class="container">
+            <div class="footer-bottom-wrap">
+                <p class="footer-bottom-text">© 2023 Posthaul. All Rights Reserved.</p>
+                <a class="footer-bottom-text" href="">Privātuma politika</a>
+                <a class="footer-bottom-text" href="">Sīkdatņu izmantošana</a>
+            </div>
+            <p class="footer-bottom-text">Mājas lapas izstrāde no <a href="#">Datateks</a></p>
+        </div>
     </div>
 </div>
 
@@ -727,11 +682,12 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="js/more.js"></script>
-<script src="js/mobileHeader.js"></script>
+<!--<script src="js/mobileHeader.js"></script>-->
 <script src="js/swiperTwo.js"></script>
 <script src="js/text.js"></script>
 <script src="js/newText.js"></script>
 <script src="js/generalText.js"></script>
+<script src="js/validation.js"></script>
 
 </body>
 </html>

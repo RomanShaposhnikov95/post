@@ -39,7 +39,8 @@
             &-data {
               background-color: rgba(12,14,18,0.8);
               padding: 25px;
-              width: 36%;
+              width: 100%;
+              max-width: 290px;
               position: relative;
               min-width: 230px;
               right: -100%;
@@ -97,11 +98,11 @@
               }
             }
 
-            &:hover {
-              .tab-pane-content-item-wrap-data {
-                right: 0;
-              }
-            }
+            //&:hover {
+            //  .tab-pane-content-item-wrap-data {
+            //    right: 0;
+            //  }
+            //}
           }
 
           &-title {
@@ -143,6 +144,84 @@
   }
 }
 
+@media (min-width: 575px) {
+  .transportPage {
+    .tab-content {
+      .tab-pane{
+        &-content {
+          &-item {
+
+            &-wrap {
+              .wrap-toggler {
+                display: none;
+              }
+
+              &:hover {
+                .tab-pane-content-item-wrap-data {
+                  right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 575px) {
+  .transportPage {
+    .tab-content {
+      .tab-pane{
+        &-content {
+          &-item {
+
+            &-wrap {
+
+              &-data {
+                //right: calc(100% - 20px);
+                right: -270px;
+              }
+
+              .wrap-toggler {
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                background-color: #0C0E12;
+                left: -40px;
+                bottom: 0;
+                border: none;
+                cursor: pointer;
+              }
+
+            }
+
+            .active {
+              .tab-pane-content-item-wrap-data {
+                right: 0;
+              }
+
+              .wrap-toggler {
+                background-color: #6DD400;
+                svg {
+                  transform: rotate(180deg);
+
+                  #Transports-375px {
+                    fill: #0C0E12;
+                  }
+
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width:475px) {
   .transportPage {
     .tab-content {
@@ -151,10 +230,13 @@
           &-item {
             &-wrap {
 
-              flex-direction: column;
+              //flex-direction: column;
 
               &-data {
-                width: 100%;
+                right: -190px;
+                max-width: 190px;
+                padding: 10px;
+                min-width: unset;
               }
             }
           }

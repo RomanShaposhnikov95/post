@@ -5,5 +5,15 @@
     margin: 0 auto;
     top: -20px;
     position: relative;
+    padding-bottom: 100px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .formPage-form {
+   .container {
+     padding: 0;
+   }
   }
 }

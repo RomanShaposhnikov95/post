@@ -30,6 +30,10 @@
         letter-spacing: -0.6px;
         line-height: 26px;
         margin-top: 6px;
+
+        &:hover {
+          color: #6DD400;;
+        }
       }
     }
   }
@@ -120,6 +124,58 @@
       row-gap: 10px;
       &-item {
         width: calc(50% - 10px);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .tabs {
+    padding-bottom: 0;
+
+    .container {
+      padding: 0;
+
+      .title-l-w {
+        padding: 0 40px;
+      }
+    }
+
+    ul {
+      flex-direction: column;
+      row-gap: 6px;
+
+
+      .nav-item {
+        .nav-link {
+          padding: 12px 40px 8px 40px;
+
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 4px;
+            opacity: 0.2;
+            background-color: #FFFFFF;
+          }
+        }
+
+        .active {
+          color: #6DD400;
+          background: transparent;
+
+          &:after {
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 4px;
+            background-color: #6DD400;
+            opacity: 1;
+          }
+        }
       }
     }
   }

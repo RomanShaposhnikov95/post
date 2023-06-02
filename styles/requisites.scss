@@ -19,10 +19,12 @@
         font-size: 18px;
         letter-spacing: -0.4px;
         line-height: 26px;
+        font-weight: 400;
       }
 
-      &-descr {
+      &-data {
         font-size: 21px;
+        font-family: 'beta', sans-serif;
       }
     }
   }
@@ -33,7 +35,17 @@
   .requisites {
     &-content {
       &-item {
-        flex-direction: column;
+        padding: 15px 20px;
+        flex-direction: column-reverse;
+
+        &-data, &-descr {
+          text-align: left;
+          width: 100%;
+        }
+
+        &-data {
+          font-size: 14px;
+        }
       }
     }
   }
