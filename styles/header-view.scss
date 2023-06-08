@@ -340,17 +340,20 @@
 
 
         .levelOne-li {
-
           .levelTwo, .levelThree {
             top: 0;
             right: -100%;
             width: 100%;
-            height: calc(100vh - 64px);
+            //height: calc(100vh - 64px);
+            bottom: 0;
+            //max-height: calc(100vh - 64px);
             position: absolute;
             z-index: 10;
             padding: 40px;
             background-color: #EEF0F1;
             transition: all 0.3s;
+            flex-grow: 1;
+            overflow-x: hidden;
           }
         }
 
@@ -378,6 +381,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 0;
+
+      svg {
+        max-width: 16px;
+        max-height: 16px;
+      }
 
       .close-svg {
         display: none;
@@ -419,16 +428,24 @@
   .header-show {
     .header-content-menu {
       display: flex;
-      overflow: hidden;
+      overflow-x: hidden;
+      //max-height: calc(100vh - 64px);
+      //overflow-y: auto;
     }
     .header-toggler {
       .open-svg {
         display: none;
       }
       .close-svg {
-        display: block;
+        display: flex;
       }
     }
   }
+
+  .active-menu {
+    max-height: calc(100vh - 64px)!important;
+    overflow-y: auto !important;
+  }
+
 }
 

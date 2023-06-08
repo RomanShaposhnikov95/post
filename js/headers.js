@@ -5,6 +5,8 @@ const header =  document.querySelector(".header")
 
 const menuToggler = document.querySelector(".header-toggler")
 
+const firstMenu = document.querySelector('.header-content-menu')
+
 window.addEventListener('scroll', function() {
     if (window.scrollY > 30) {
         header.classList.add("scroll")
@@ -28,6 +30,8 @@ if (mediaQuery.matches) {
 
         levelOneBtn.addEventListener("click", () => {
             levelTwoMenu.style.right = "0"
+            levelTwoMenu.classList.add('active-menu')
+            firstMenu.classList.remove('active-menu')
         })
 
         const liWrap = document.createElement('li')
@@ -36,6 +40,8 @@ if (mediaQuery.matches) {
         backToFirst.textContent = levelOneBtn.innerHTML
         backToFirst.addEventListener('click', () => {
             levelTwoMenu.style.right = "-100%"
+            firstMenu.classList.add('active-menu')
+            levelTwoMenu.classList.remove('active-menu')
         })
         liWrap.appendChild(backToFirst)
         levelTwoMenu.insertBefore(liWrap, levelTwoMenu.firstChild)
@@ -50,6 +56,9 @@ if (mediaQuery.matches) {
 
             levelTwoBtn.addEventListener("click", () => {
                 levelThreeMenu.style.right = "0"
+
+                levelThreeMenu.classList.add('active-menu')
+                levelTwoMenu.classList.remove('active-menu')
             })
 
             levelTwoBtn.classList.add("content-true")
@@ -60,6 +69,9 @@ if (mediaQuery.matches) {
             backToSecond.textContent = levelTwoBtn.innerHTML
             backToSecond.addEventListener('click', () => {
                 levelThreeMenu.style.right = "-100%"
+                levelTwoMenu.classList.add('active-menu')
+                levelThreeMenu.classList.remove('active-menu')
+
             })
             liWrapTwo.appendChild(backToSecond)
             levelThreeMenu.insertBefore(liWrapTwo, levelThreeMenu.firstChild)
@@ -90,10 +102,6 @@ if (mediaQuery.matches) {
                 })
             })
         }
-
-
-
-
     })
 }
 
