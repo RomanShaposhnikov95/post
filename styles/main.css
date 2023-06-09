@@ -292,6 +292,19 @@ ul {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+.wrapper .clip {
+  position: relative;
+}
+.wrapper .clip:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 50px solid #DADADA;
+  border-left: 50px solid transparent;
+  top: 0;
+  right: 0;
+}
 
 @media (max-width: 1380px) {
   .wrapper-left-deep {
@@ -639,6 +652,15 @@ ul {
   font-weight: 500;
   letter-spacing: -0.4px;
   line-height: 22px;
+}
+.about .clip:after {
+  border-bottom: 50px solid #EEF0F1;
+  border-right: 50px solid transparent;
+  border-top: unset;
+  border-left: unset;
+  left: 0;
+  top: unset;
+  bottom: 0;
 }
 
 @media (max-width: 975px) {
@@ -3690,6 +3712,21 @@ textarea {
     column-gap: 10px;
     justify-content: space-between;
   }
+}
+.type {
+  background-color: #DADADA;
+}
+.type .wrapper-left {
+  background-color: #0F0F0F;
+}
+.type .wrapper-left .about-info-title, .type .wrapper-left .about-info-descr {
+  color: #FFFFFF;
+}
+.type .wrapper-left .about-info a {
+  color: #6DD400;
+}
+.type .wrapper-left .about-info a svg * {
+  fill: #6DD400;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -361,6 +361,20 @@ ul {
         }
       }
     }
+
+  .clip {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 50px solid #DADADA;
+      border-left: 50px solid transparent;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 @media (max-width: 1380px) {

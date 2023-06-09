@@ -52,6 +52,18 @@
       }
     }
   }
+
+  .clip {
+    &:after {
+      border-bottom: 50px solid #EEF0F1;
+      border-right: 50px solid transparent;
+      border-top: unset;
+      border-left: unset;
+      left: 0;
+      top: unset;
+      bottom: 0;
+    }
+  }
 }
 
 

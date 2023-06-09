@@ -1,0 +1,31 @@
+.type {
+  background-color: #DADADA;
+
+  .wrapper-left {
+    background-color: #0F0F0F;
+
+    .about-info {
+      &-title, &-descr {
+        color: #FFFFFF;
+      }
+
+      a {
+        color: #6DD400;
+
+        svg * {
+          fill: #6DD400;
+        }
+      }
+    }
+  }
+
+  .wrapper-right {
+
+  }
+
+  .clip {
+    &:after {
+
+    }
+  }
+}
