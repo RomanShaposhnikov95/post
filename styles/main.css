@@ -3587,6 +3587,10 @@ textarea {
 .calculator .form-wrap-section .switch-field label:hover {
   cursor: pointer;
 }
+.calculator .form-wrap-section-wrap {
+  display: flex;
+  column-gap: 10px;
+}
 .calculator .range .noUi-base {
   height: 10px;
 }

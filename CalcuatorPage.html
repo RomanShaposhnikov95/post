@@ -270,22 +270,45 @@
             <div class="form-wrap-section">
                 <h5 class="form-wrap-section-title">Izvēlieties palešu veidu</h5>
                 <div class="switch-field">
-                    <input type="radio" id="radio-three" name="switch" value="yes" data-weight="100" data-coefficient="0.5" checked/>
+                    <input type="radio" id="radio-three" name="switch" data-weight="100" data-coefficient="0.5" data-type="true" checked/>
                     <label for="radio-three">
                         <p>Eiro palete</p>
                         <p>120 x 80 cm</p>
                     </label>
-                    <input type="radio" id="radio-four" name="switch" data-weight="300" data-coefficient="0.7" value="maybe" />
+                    <input type="radio" id="radio-four" name="switch" data-weight="300"  data-coefficient="0.7"  data-type="true" />
                     <label for="radio-four">
                         <p>Somu palete</p>
                         <p>120 x 100 cm</p>
                     </label>
-                    <input type="radio" id="radio-five" name="switch" data-weight="500" data-coefficient="1" value="no" />
+                    <input type="radio" id="radio-five" name="switch" data-weight="500" data-coefficient="1"  data-type="true" />
                     <label for="radio-five">
                         <p>Industriālā palete</p>
                         <p>120 x 120 cm</p>
                     </label>
+                    <input type="radio" id="radio-six" name="switch" data-weight="0" data-coefficient="0"  data-type="false" />
+                    <label for="radio-six">
+                        <p>Nestandarta palete</p>
+                        <p></p>
+                    </label>
                 </div>
+            </div>
+
+            <div id="non-standard" class="form-wrap-section d-none">
+                <h5 class="form-wrap-section-title">Nestandarta paleša parametrs</h5>
+
+                <div class="form-wrap-section-wrap">
+                    <div class="input-wrap-half">
+                        <input id="non-standard-length" placeholder="Garums (m)" type="number">
+                    </div>
+                    <div class="input-wrap-half">
+                        <input id="non-standard-width" placeholder="Platums (m):" type="number">
+                    </div>
+                    <div class="input-wrap-half">
+                        <input id="non-standard-weight" placeholder="Svars" type="number">
+                        <span>kg</span>
+                    </div>
+                </div>
+
             </div>
 
             <div class="form-wrap-section">
