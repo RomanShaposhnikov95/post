@@ -69,9 +69,9 @@ Array.from(radios).forEach((radio) => {
             totalWeight.textContent = `0 kg`;
             coefficient.textContent = `0`;
 
-            nonStandardLength.value = "0"
-            nonStandardWidth.value = "0"
-            nonStandardWeight.value = "0"
+            nonStandardLength.value = ""
+            nonStandardWidth.value = ""
+            nonStandardWeight.value = ""
 
         } else {
             nonStandardWrap.classList.add('d-none')

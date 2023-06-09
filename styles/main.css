@@ -3685,6 +3685,10 @@ textarea {
     flex-direction: column;
     row-gap: 5px;
   }
+  .calculator .form-wrap-section-wrap {
+    flex-direction: column;
+    row-gap: 10px;
+  }
   .calculator .range .noUi-value {
     font-size: 9px;
   }
