@@ -359,8 +359,16 @@
 
       }
 
+
       .dropdown {
         margin-right: 20px;
+
+        &-menu {
+          transform: translate(5px, 35px) !important;
+          &:after {
+            content: unset;
+          }
+        }
       }
 
       .desktop-btn {

@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("../assets/img/image-header@2x.jpg");
+  //background-image: url("../assets/img/image-header@2x.jpg");
   padding-top: 266px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,32 +53,6 @@
   }
 }
 
-
-@media (max-width: 800px) {
-  .banner {
-    &-wrap {
-      width: 100%;
-    }
-  }
-}
-
-@media (max-width: 475px) {
-  .banner {
-    text-align: center;
-    .container {
-      padding: 0;
-    }
-    &-wrap {
-      padding: 40px 20px 20px 20px;
-
-      .btn {
-        width: 100%;
-      }
-    }
-  }
-}
-
-
 .video-bg {
   height: 100%;
   width: 100%;
@@ -95,4 +69,36 @@
   height: 100%;
   object-fit: cover;
 }
+
+
+@media (max-width: 800px) {
+  .banner {
+    &-wrap {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .banner {
+    text-align: center;
+    padding-top: 0;
+    .container {
+      padding: 0;
+    }
+    &-wrap {
+      padding: 40px 20px 20px 20px;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  .video-bg {
+    position: static;
+  }
+}
+
+
 
