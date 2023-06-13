@@ -38,6 +38,7 @@
 
             &-data {
               background-color: rgba(12,14,18,0.8);
+
               padding: 25px;
               width: 100%;
               max-width: 290px;
@@ -45,7 +46,7 @@
               min-width: 230px;
               right: -100%;
               transition: all 0.3s;
-
+              backdrop-filter: blur(10px);
 
               &:after {
                 position: absolute;
@@ -60,9 +61,9 @@
 
               &-title {
                 color: #FFFFFF;
-                font-size: 21px;
+                font-size: 18px;
                 letter-spacing: -0.4px;
-                line-height: 26px;
+                line-height: 22px;
               }
 
               &-content {
@@ -73,25 +74,28 @@
                   display: flex;
                   justify-content: space-between;
                   width: 100%;
+                  border-bottom: 1px solid rgb(255 255 255 / 20%);
 
                   &:first-child {
                     margin-top: 0;
                   }
                   &-title {
+                    width: 70%;
                     opacity: 0.7;
                     color: #FFFFFF;
-                    font-size: 14px;
+                    font-size: 13px;
                     letter-spacing: -0.4px;
-                    line-height: 22px;
+                    line-height: 18px;
                     max-width: 50%;
                   }
 
                   &-info {
+                    width: 30%;
                     color: #6DD400;
-                    font-size: 14px;
+                    font-size: 13px;
                     font-weight: 500;
                     letter-spacing: -0.4px;
-                    line-height: 22px;
+                    line-height: 18px;
                     max-width: 50%;
                   }
                 }
@@ -118,7 +122,7 @@
           }
 
           .link {
-            margin-top: 30px;
+            margin-top: 10px;
           }
         }
       }
