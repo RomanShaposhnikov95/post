@@ -64,6 +64,10 @@
       column-gap: 10px;
     }
 
+    #qty {
+      display: none;
+    }
+
   }
 
   .range {
@@ -102,7 +106,7 @@
         display: none;
       }
 
-      &-value[data-value="23"] {
+      &-value[data-value="34"] {
         display: none;
       }
 
@@ -175,6 +179,26 @@
           line-height: 17px;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 755px) {
+  .calculator {
+
+    .form-wrap-section {
+      #qty {
+        display: flex;
+      }
+
+      .range {
+        display: none;
+      }
+
+    }
+
+    &-total {
+      margin: 0;
     }
   }
 }

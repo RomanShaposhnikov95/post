@@ -17,7 +17,7 @@ noUiSlider.create(snapSlider, {
     step: 1,
     range: {
         'min': 0,
-        'max': 23
+        'max': 34
     },
     padding: [0, 1],
     pips: {
@@ -27,6 +27,17 @@ noUiSlider.create(snapSlider, {
     }
 });
 
+
+let select = document.getElementById('input-select');
+
+for (let i = 0; i <= 33; i++) {
+
+    let option = document.createElement("option");
+    option.text = i;
+    option.value = i;
+
+    select.appendChild(option);
+}
 
 
 Array.from(radios).forEach((radio) => {
@@ -87,8 +98,25 @@ Array.from(radios).forEach((radio) => {
            } else {
                updateValues(newValue);
            }
-
         }
+    });
+
+    snapSlider.noUiSlider.on('update', function (values, handle) {
+        const newValue = values[handle];
+        select.value = Math.round(newValue);
+
+        if (radio.checked) {
+            if (t === "false") {
+                updateNoNonStandardValues(null, null, null, newValue);
+            } else {
+                updateValues(newValue);
+            }
+        }
+    });
+
+    select.addEventListener('change', function () {
+        snapSlider.noUiSlider.set([this.value, null]);
+
     });
 
     nonStandardLength.addEventListener("input", (e) => {

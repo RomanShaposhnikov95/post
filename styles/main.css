@@ -1888,24 +1888,24 @@ ul {
   position: relative;
   align-items: center;
 }
-.input-wrap input, .input-wrap textarea, .input-wrap-half input, .input-wrap-half textarea {
+.input-wrap input, .input-wrap textarea, .input-wrap select, .input-wrap-half input, .input-wrap-half textarea, .input-wrap-half select {
   width: 100%;
   padding: 14px 26px;
   border: none;
   outline: none;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
-.input-wrap input::placeholder, .input-wrap textarea::placeholder, .input-wrap-half input::placeholder, .input-wrap-half textarea::placeholder {
+.input-wrap input::placeholder, .input-wrap textarea::placeholder, .input-wrap select::placeholder, .input-wrap-half input::placeholder, .input-wrap-half textarea::placeholder, .input-wrap-half select::placeholder {
   height: 26px;
   color: #61646B;
   font-size: 16px;
   letter-spacing: -0.4px;
   line-height: 26px;
 }
-.input-wrap input:focus, .input-wrap textarea:focus, .input-wrap-half input:focus, .input-wrap-half textarea:focus {
+.input-wrap input:focus, .input-wrap textarea:focus, .input-wrap select:focus, .input-wrap-half input:focus, .input-wrap-half textarea:focus, .input-wrap-half select:focus {
   box-shadow: 0 0 0 1px #6DD400;
 }
-.input-wrap input .invalid-feedback, .input-wrap textarea .invalid-feedback, .input-wrap-half input .invalid-feedback, .input-wrap-half textarea .invalid-feedback {
+.input-wrap input .invalid-feedback, .input-wrap textarea .invalid-feedback, .input-wrap select .invalid-feedback, .input-wrap-half input .invalid-feedback, .input-wrap-half textarea .invalid-feedback, .input-wrap-half select .invalid-feedback {
   color: #E02020;
   font-size: 13px;
   letter-spacing: -0.4px;
@@ -3592,6 +3592,9 @@ textarea {
   display: flex;
   column-gap: 10px;
 }
+.calculator .form-wrap-section #qty {
+  display: none;
+}
 .calculator .range .noUi-base {
   height: 10px;
 }
@@ -3619,7 +3622,7 @@ textarea {
 .calculator .range .noUi-value[data-value="0"] {
   display: none;
 }
-.calculator .range .noUi-value[data-value="23"] {
+.calculator .range .noUi-value[data-value="34"] {
   display: none;
 }
 .calculator .range .noUi-marker-horizontal.noUi-marker {
@@ -3681,6 +3684,17 @@ textarea {
   line-height: 17px;
 }
 
+@media (max-width: 755px) {
+  .calculator .form-wrap-section #qty {
+    display: flex;
+  }
+  .calculator .form-wrap-section .range {
+    display: none;
+  }
+  .calculator-total {
+    margin: 0;
+  }
+}
 @media (max-width: 475px) {
   .calculator .form-wrap-section .switch-field {
     flex-direction: column;
