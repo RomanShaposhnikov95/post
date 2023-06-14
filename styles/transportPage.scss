@@ -29,12 +29,18 @@
             background-repeat: no-repeat;
             background-position: center;
 
-            min-height: 360px;
+            height: 360px;
             width: 100%;
             background-color: #EEEFF1;
             display: flex;
             justify-content: flex-end;
             overflow-x: hidden;
+            position: relative;
+
+            img {
+              max-width: 100%;
+              object-fit: cover;
+            }
 
             &-data {
               background-color: rgba(12,14,18,0.8);
@@ -42,7 +48,10 @@
               padding: 25px;
               width: 100%;
               max-width: 290px;
-              position: relative;
+              //position: relative;
+              top: 0;
+              bottom: 0;
+              position: absolute;
               min-width: 230px;
               right: -100%;
               transition: all 0.3s;
@@ -150,6 +159,8 @@
 
 @media (min-width: 575px) {
   .transportPage {
+
+
     .tab-content {
       .tab-pane{
         &-content {
@@ -176,6 +187,10 @@
 
 @media (max-width: 575px) {
   .transportPage {
+
+    .container {
+      padding: 0;
+    }
     .tab-content {
       .tab-pane{
         &-content {
@@ -217,6 +232,10 @@
 
                 }
               }
+            }
+
+            &-title, .descr-s, .link {
+              padding: 0 30px;
             }
 
           }

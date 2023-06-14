@@ -428,7 +428,7 @@ ul {
     width: 100%;
   }
 }
-@media (max-width: 475px) {
+@media (max-width: 775px) {
   .banner {
     text-align: center;
     padding-top: 0;
@@ -2332,19 +2332,26 @@ textarea {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 360px;
+  height: 360px;
   width: 100%;
   background-color: #EEEFF1;
   display: flex;
   justify-content: flex-end;
   overflow-x: hidden;
+  position: relative;
+}
+.transportPage .tab-content .tab-pane-content-item-wrap img {
+  max-width: 100%;
+  object-fit: cover;
 }
 .transportPage .tab-content .tab-pane-content-item-wrap-data {
   background-color: rgba(12, 14, 18, 0.8);
   padding: 25px;
   width: 100%;
   max-width: 290px;
-  position: relative;
+  top: 0;
+  bottom: 0;
+  position: absolute;
   min-width: 230px;
   right: -100%;
   transition: all 0.3s;
@@ -2429,6 +2436,9 @@ textarea {
   }
 }
 @media (max-width: 575px) {
+  .transportPage .container {
+    padding: 0;
+  }
   .transportPage .tab-content .tab-pane-content-item-wrap-data {
     right: -270px;
   }
@@ -2453,6 +2463,9 @@ textarea {
   }
   .transportPage .tab-content .tab-pane-content-item .active .wrap-toggler svg #Transports-375px {
     fill: #0C0E12;
+  }
+  .transportPage .tab-content .tab-pane-content-item-title, .transportPage .tab-content .tab-pane-content-item .descr-s, .transportPage .tab-content .tab-pane-content-item .link {
+    padding: 0 30px;
   }
 }
 @media (max-width: 475px) {
@@ -3754,6 +3767,11 @@ textarea {
 }
 .type .wrapper-left .about-info a svg * {
   fill: #6DD400;
+}
+.type .wrapper-right-deep-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
