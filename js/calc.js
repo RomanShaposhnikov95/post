@@ -10,7 +10,6 @@ let nonStandardWidth = document.getElementById('non-standard-width');
 let nonStandardWeight = document.getElementById('non-standard-weight');
 let select = document.getElementById('input-select');
 
-
 noUiSlider.create(snapSlider, {
     start: 0,
     behaviour: 'snap',
@@ -18,7 +17,7 @@ noUiSlider.create(snapSlider, {
     step: 1,
     range: {
         'min': 0,
-        'max': 34
+        'max': 27
     },
     padding: [0, 1],
     pips: {
@@ -29,25 +28,39 @@ noUiSlider.create(snapSlider, {
 });
 
 
-for (let i = 0; i <= 33; i++) {
-
-    let option = document.createElement("option");
-    option.text = i;
-    option.value = i;
-
-    select.appendChild(option);
-}
-
 
 Array.from(radios).forEach((radio) => {
     const w = radio.dataset.weight;
     const c = radio.dataset.coefficient;
     const t = radio.dataset.type;
+    const qty = radio.dataset.qty;
 
     let oldLength = 0;
     let oldWidth = 0;
     let oldWeight = 0;
 
+    window.addEventListener("DOMContentLoaded", (event) => {
+        const sliderValue = snapSlider.noUiSlider.get();
+        if (radio.checked) {
+            updateValues(sliderValue);
+            selectOptions(27)
+        }
+    });
+
+    radio.addEventListener('change', function () {
+        select.innerHTML = ""
+        snapSlider.noUiSlider.updateOptions(
+            {
+                range: {
+                    'min': 0,
+                    'max': Number(qty) + 1
+                }
+            }
+        );
+
+        selectOptions(Number(qty))
+
+    });
 
 
     const updateValues = (sliderValue) => {
@@ -56,6 +69,7 @@ Array.from(radios).forEach((radio) => {
         totalWeight.textContent = `${w * roundedValue} kg`;
         coefficient.textContent = `${(roundedValue * c).toFixed(2)}`;
     };
+
 
     const updateNoNonStandardValues = (nsLength, nsWidth, nsWeight, sliderValue) => {
 
@@ -68,19 +82,16 @@ Array.from(radios).forEach((radio) => {
         const roundedValue = Math.round(sliderValue);
         weight.textContent = `${oldWeight} kg`;
         totalWeight.textContent = `${oldWeight * roundedValue} kg`;
-        coefficient.textContent = `${(oldLength * oldWidth * roundedValue).toFixed(2)}`;
+        console.log(oldLength, oldWidth, roundedValue)
+        let r = oldLength * oldWidth * sliderValue / 2.4;
+        let o = oldWeight / 1000 / 1.84;
+        let a = Math.max(r, o);
+        a = Math.round(100 * a) / 100;
+        coefficient.textContent = a;
     };
-
-    window.addEventListener("DOMContentLoaded", (event) => {
-        const sliderValue = snapSlider.noUiSlider.get();
-        if (radio.checked) {
-            updateValues(sliderValue);
-        }
-    });
 
     radio.addEventListener('change', () => {
         const sliderValue = snapSlider.noUiSlider.get();
-
         if (t === "false") {
             nonStandardWrap.classList.remove('d-none')
 
@@ -101,19 +112,6 @@ Array.from(radios).forEach((radio) => {
     snapSlider.noUiSlider.on('change', (values, handle) => {
         const newValue = values[handle];
         if (radio.checked) {
-           if (t === "false") {
-               updateNoNonStandardValues(null, null, null, newValue);
-           } else {
-               updateValues(newValue);
-           }
-        }
-    });
-
-    snapSlider.noUiSlider.on('update', function (values, handle) {
-        const newValue = values[handle];
-        select.value = Math.round(newValue);
-
-        if (radio.checked) {
             if (t === "false") {
                 updateNoNonStandardValues(null, null, null, newValue);
             } else {
@@ -124,7 +122,6 @@ Array.from(radios).forEach((radio) => {
 
     select.addEventListener('change', function () {
         snapSlider.noUiSlider.set([this.value, null]);
-
     });
 
     nonStandardLength.addEventListener("input", (e) => {
@@ -147,7 +144,12 @@ Array.from(radios).forEach((radio) => {
 });
 
 
+const selectOptions = (qty) => {
+    for (let i = 0; i <= qty; i++) {
+        let option = document.createElement("option");
+        option.text = i;
+        option.value = i;
 
-
-
-
+        select.appendChild(option);
+    }
+}
