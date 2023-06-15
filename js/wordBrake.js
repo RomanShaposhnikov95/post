@@ -2,7 +2,7 @@ let collectionElement = document.querySelectorAll(".collection");
 
 
 collectionElement.forEach(el => {
-    let myText = el.querySelector(".my-text-test")
+    let myText = el.querySelector(".element")
     let collectionText = myText.getAttribute("data-text");
     const arr = JSON.parse(collectionText)
 

@@ -416,62 +416,62 @@ ul {
   color: #0C0E12;
 }
 
-//main.css- 444
-.banner-wrap {
-  width: 100%;
-  max-width: 712px;
-  display: flex;
-  flex-direction: column;
-}
-
-//main.css- 11
-html, body {
-  // добавить
-  overflow-x: hidden;
-}
-
-//main.css- 516
-@media (max-width: 775px) {
-  // добавить
-
-  .banner-wrap {
-    height: 590px;
-    max-width: unset;
-    display: flex;
-    flex-direction: column;
-  }
-  // добавить все что написанно снизу снизу
-  .banner-wrap a {
-    display: flex;
-    flex-grow: 3;
-    align-items: flex-end;
-  }
-}
-
-
-//main.css-882
-
-@media (max-width: 775px) { //@media (max-width: 700px) заменить на 775px
-  .smallBanner-wrap { //882
-    // добавить
-    height: 354px;
-  }
-
-  .smallBanner-wrap-content { //888
-    // добавить
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  // добавить все что написанно снизу снизу
-  .smallBanner-wrap-content a {
-    display: flex;
-    flex-grow: 3;
-    align-items: flex-end;
-  }
-}
-
+////main.css- 444
+//.banner-wrap {
+//  width: 100%;
+//  max-width: 712px;
+//  display: flex;
+//  flex-direction: column;
+//}
+//
+////main.css- 11
+//html, body {
+//  // добавить
+//  overflow-x: hidden;
+//}
+//
+////main.css- 516
+//@media (max-width: 775px) {
+//  // добавить
+//
+//  .banner-wrap {
+//    height: 590px;
+//    max-width: unset;
+//    display: flex;
+//    flex-direction: column;
+//  }
+//  // добавить все что написанно снизу снизу
+//  .banner-wrap a {
+//    display: flex;
+//    flex-grow: 3;
+//    align-items: flex-end;
+//  }
+//}
+//
+//
+////main.css-882
+//
+//@media (max-width: 775px) { //@media (max-width: 700px) заменить на 775px
+//  .smallBanner-wrap { //882
+//    // добавить
+//    height: 354px;
+//  }
+//
+//  .smallBanner-wrap-content { //888
+//    // добавить
+//    height: 100%;
+//    display: flex;
+//    flex-direction: column;
+//  }
+//
+//  // добавить все что написанно снизу снизу
+//  .smallBanner-wrap-content a {
+//    display: flex;
+//    flex-grow: 3;
+//    align-items: flex-end;
+//  }
+//}
+//
 
 
 
