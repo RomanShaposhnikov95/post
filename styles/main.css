@@ -2358,7 +2358,11 @@ textarea {
   transition: all 0.3s;
   backdrop-filter: blur(10px);
 }
-.transportPage .tab-content .tab-pane-content-item-wrap-data:after {
+.transportPage .tab-content .tab-pane-content-item-wrap-data-container {
+  max-height: 100%;
+  overflow-y: auto;
+}
+.transportPage .tab-content .tab-pane-content-item-wrap-data-container:after {
   position: absolute;
   content: "";
   width: 0;
@@ -2439,6 +2443,9 @@ textarea {
 @media (max-width: 575px) {
   .transportPage .container {
     padding: 0;
+  }
+  .transportPage .tab-content .tab-pane-content-item-wrap {
+    height: unset;
   }
   .transportPage .tab-content .tab-pane-content-item-wrap-data {
     right: -270px;

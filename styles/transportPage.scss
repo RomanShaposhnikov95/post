@@ -57,16 +57,21 @@
               transition: all 0.3s;
               backdrop-filter: blur(10px);
 
-              &:after {
-                position: absolute;
-                content: "";
-                width: 0;
-                height: 0;
-                border-top: 25px solid #6DD400;
-                border-left: 25px solid transparent;
-                top: 0;
-                right: 0;
+              &-container {
+                max-height: 100%;
+                overflow-y: auto;
+                &:after {
+                  position: absolute;
+                  content: "";
+                  width: 0;
+                  height: 0;
+                  border-top: 25px solid #6DD400;
+                  border-left: 25px solid transparent;
+                  top: 0;
+                  right: 0;
+                }
               }
+
 
               &-title {
                 color: #FFFFFF;
@@ -197,7 +202,7 @@
           &-item {
 
             &-wrap {
-
+              height: unset;
               &-data {
                 //right: calc(100% - 20px);
                 right: -270px;
