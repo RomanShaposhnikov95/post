@@ -49,6 +49,8 @@ Array.from(radios).forEach((radio) => {
     let oldWidth = 0;
     let oldWeight = 0;
 
+
+
     const updateValues = (sliderValue) => {
         const roundedValue = Math.round(sliderValue);
         weight.textContent = `${w} kg`;
@@ -69,6 +71,13 @@ Array.from(radios).forEach((radio) => {
         totalWeight.textContent = `${oldWeight * roundedValue} kg`;
         coefficient.textContent = `${(oldLength * oldWidth * roundedValue).toFixed(2)}`;
     };
+
+    window.addEventListener("DOMContentLoaded", (event) => {
+        const sliderValue = snapSlider.noUiSlider.get();
+        if (radio.checked) {
+            updateValues(sliderValue);
+        }
+    });
 
     radio.addEventListener('change', () => {
         const sliderValue = snapSlider.noUiSlider.get();

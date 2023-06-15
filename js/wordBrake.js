@@ -1,20 +1,26 @@
-let collectionElement = document.getElementById("collection");
-let collectionText = collectionElement.innerHTML;
+let collectionElement = document.querySelectorAll(".collection");
 
-let words = collectionText.split(",");
 
-let longestWord = "";
+collectionElement.forEach(el => {
+    let myText = el.querySelector(".my-text-test")
+    let collectionText = myText.getAttribute("data-text");
+    const arr = JSON.parse(collectionText)
 
-for (let i = 0; i < words.length; i++) {
-    let currentWord = words[i].trim();
-    if (currentWord.length > longestWord.length) {
-        longestWord = currentWord;
+    let hideText = el.querySelector(".hide-text")
+
+    let longestWord = "";
+
+    for (let i = 0; i < arr.length; i++) {
+        let currentWord = arr[i].trim();
+        if (currentWord.length > longestWord.length) {
+            longestWord = currentWord;
+        }
     }
-}
 
-if (longestWord.length * 10 > collectionElement.offsetWidth) {
+    hideText.innerHTML = longestWord
+    el.style.height = `${el.offsetHeight}px`
+    hideText.style.display = `none`
+})
 
-    let brElement = document.createElement("br");
-    collectionElement.parentNode.insertBefore(brElement, collectionElement);
-}
+
 

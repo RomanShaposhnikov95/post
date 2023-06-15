@@ -334,6 +334,48 @@ ul {
   color: #0C0E12;
 }
 
+.banner-wrap {
+  width: 100%;
+  max-width: 712px;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 775px) {
+  .banner-wrap {
+    height: 590px;
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-wrap a {
+    display: flex;
+    flex-grow: 3;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 775px) {
+  .smallBanner-wrap {
+    height: 354px;
+  }
+
+  .smallBanner-wrap-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .smallBanner-wrap-content a {
+    display: flex;
+    flex-grow: 3;
+    align-items: flex-end;
+  }
+}
 .textWrap {
   position: relative;
 }
@@ -438,6 +480,7 @@ ul {
   }
   .banner-wrap {
     padding: 40px 20px 20px 20px;
+    height: fit-content;
   }
   .banner-wrap .btn {
     width: 100%;
