@@ -109,7 +109,7 @@ Array.from(radios).forEach((radio) => {
         }
     });
 
-    snapSlider.noUiSlider.on('change', (values, handle) => {
+    snapSlider.noUiSlider.on('update', (values, handle) => {
         const newValue = values[handle];
         if (radio.checked) {
             if (t === "false") {
@@ -121,6 +121,7 @@ Array.from(radios).forEach((radio) => {
     });
 
     select.addEventListener('change', function () {
+        console.log("this.value", this.value)
         snapSlider.noUiSlider.set([this.value, null]);
     });
 

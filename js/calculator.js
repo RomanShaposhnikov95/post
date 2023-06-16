@@ -110,6 +110,7 @@ Array.from(radios).forEach((radio) => {
     });
 
     snapSlider.noUiSlider.on('update', function (values, handle) {
+        console.log("tutt")
         const newValue = values[handle];
         select.value = Math.round(newValue);
 
@@ -123,6 +124,7 @@ Array.from(radios).forEach((radio) => {
     });
 
     select.addEventListener('change', function () {
+        console.log("this.value", this.value)
         snapSlider.noUiSlider.set([this.value, null]);
 
     });

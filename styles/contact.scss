@@ -45,6 +45,10 @@
       display: flex;
       column-gap: 10px;
     }
+
+    .contact-right {
+      display: none;
+    }
   }
 
   &-right {
@@ -119,6 +123,22 @@
   .contact {
     .container {
       flex-direction: column;
+    }
+
+    &-left {
+      .contact-right {
+        margin-top: 30px;
+        display: flex;
+
+        &-item {
+          flex-wrap: unset;
+        }
+      }
+
+      .descr {
+        margin-top: 20px;
+      }
+
     }
 
      &-right {
