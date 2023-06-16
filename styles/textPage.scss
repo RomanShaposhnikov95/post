@@ -237,3 +237,17 @@
   }
 }
 
+
+//main.css - 4258
+
+.type .wrapper-right-deep-wrap .wrapper-right-deep-wrap-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.type .wrapper-right-deep-wrap video {
+  object-fit: contain;
+}

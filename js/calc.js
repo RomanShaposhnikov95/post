@@ -17,7 +17,7 @@ noUiSlider.create(snapSlider, {
     step: 1,
     range: {
         'min': 0,
-        'max': 27
+        'max': 33
     },
     padding: [0, 1],
     pips: {
@@ -43,23 +43,14 @@ Array.from(radios).forEach((radio) => {
         const sliderValue = snapSlider.noUiSlider.get();
         if (radio.checked) {
             updateValues(sliderValue);
-            selectOptions(27)
+            selectOptions(33)
         }
     });
 
     radio.addEventListener('change', function () {
         select.innerHTML = ""
-        snapSlider.noUiSlider.updateOptions(
-            {
-                range: {
-                    'min': 0,
-                    'max': Number(qty) + 1
-                }
-            }
-        );
 
         selectOptions(Number(qty))
-
     });
 
 
@@ -82,7 +73,19 @@ Array.from(radios).forEach((radio) => {
         const roundedValue = Math.round(sliderValue);
         weight.textContent = `${oldWeight} kg`;
         totalWeight.textContent = `${oldWeight * roundedValue} kg`;
-        console.log(oldLength, oldWidth, roundedValue)
+
+        // calculate some shit
+
+        let countWidth = Math.min(oldLength, oldWidth);
+        let countLength = Math.max(oldLength, oldWidth);
+        let pcsWidth = parseInt(2.4 / countWidth);
+        let pcsLength = parseInt(13.6 / countLength);
+        let maxCountDimens = pcsWidth * pcsLength;
+        let maxCountWeight = parseInt(24000 / nsWeight);
+        let res = Math.min(maxCountDimens, maxCountWeight)
+        selectOptions(res);
+        //console.log(maxCountDimens, maxCountWeight, res);
+
         let r = oldLength * oldWidth * sliderValue / 2.4;
         let o = oldWeight / 1000 / 1.84;
         let a = Math.max(r, o);
@@ -121,31 +124,54 @@ Array.from(radios).forEach((radio) => {
     });
 
     select.addEventListener('change', function () {
-        console.log("this.value", this.value)
         snapSlider.noUiSlider.set([this.value, null]);
     });
 
     nonStandardLength.addEventListener("input", (e) => {
-        const sliderValue = snapSlider.noUiSlider.get();
+        const max = Number(nonStandardLength.getAttribute("max"))
         const value = Number(e.target.value);
+        if (value > max) {
+            nonStandardLength.value = max
+        }
+        const sliderValue = snapSlider.noUiSlider.get();
         updateNoNonStandardValues(value, null, null, sliderValue);
     })
 
     nonStandardWidth.addEventListener("input", (e) => {
         const sliderValue = snapSlider.noUiSlider.get();
+        const max = Number(nonStandardWidth.getAttribute("max"))
         const value = Number(e.target.value);
+        if (value > max) {
+            nonStandardWidth.value = max
+        }
         updateNoNonStandardValues(null, value, null, sliderValue);
     })
 
     nonStandardWeight.addEventListener("input", (e) => {
         const sliderValue = snapSlider.noUiSlider.get();
-        const value = Number(e.target.value)
+        const max = Number(nonStandardWeight.getAttribute("max"))
+        const value = Number(e.target.value);
+        if (value > max) {
+            nonStandardWeight.value = max
+        }
         updateNoNonStandardValues(null, null, value, sliderValue);
     })
 });
 
 
 const selectOptions = (qty) => {
+
+    if (isNaN(qty)) return;
+    select.innerHTML = ""
+    snapSlider.noUiSlider.updateOptions(
+        {
+            range: {
+                'min': 0,
+                'max': Number(qty) + 1
+            }
+        }
+    );
+
     for (let i = 0; i <= qty; i++) {
         let option = document.createElement("option");
         option.text = i;
