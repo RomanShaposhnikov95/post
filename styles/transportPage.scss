@@ -234,6 +234,22 @@
                 cursor: pointer;
               }
 
+              .scroll {
+
+                &:before {
+                  content: "";
+                  position: absolute;
+                  top: 80%;
+                  left: 45%;
+                  transform: rotate(45deg);
+                  width: 20px;
+                  height: 20px;
+                  border: solid #6DD400;
+                  border-width: 0 3px 3px 0;
+                  animation: arrow-animation 0.7s infinite;
+                }
+              }
+
             }
 
             .active {
@@ -289,3 +305,17 @@
   }
 }
 
+@keyframes arrow-animation {
+  0% {
+    //transform: rotate(45deg) translateY(0);
+    top: 80%;
+  }
+  50% {
+    //transform: rotate(45deg) translateY(10px);
+    top: 82%;
+  }
+  100% {
+    //transform: rotate(45deg) translateY(0);
+    top: 80%;
+  }
+}

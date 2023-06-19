@@ -2486,6 +2486,18 @@ textarea {
     border: none;
     cursor: pointer;
   }
+  .transportPage .tab-content .tab-pane-content-item-wrap .scroll:before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    border: solid #6DD400;
+    border-width: 0 3px 3px 0;
+    animation: arrow-animation 0.7s infinite;
+  }
   .transportPage .tab-content .tab-pane-content-item .active .tab-pane-content-item-wrap-data {
     right: 0;
   }
@@ -2508,6 +2520,17 @@ textarea {
     max-width: 190px;
     padding: 10px;
     min-width: unset;
+  }
+}
+@keyframes arrow-animation {
+  0% {
+    top: 80%;
+  }
+  50% {
+    top: 82%;
+  }
+  100% {
+    top: 80%;
   }
 }
 .freight {
