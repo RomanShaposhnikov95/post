@@ -60,6 +60,23 @@
               &-container {
                 max-height: 100%;
                 overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: thin;
+                scrollbar-color: #000000 transparent;
+
+                &::-webkit-scrollbar {
+                  width: 5px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                  background-color: #6DD400;
+                }
+
+                &::-webkit-scrollbar-track {
+                  background-color: transparent;
+                }
+
+
                 &:after {
                   position: absolute;
                   content: "";
@@ -162,10 +179,8 @@
   }
 }
 
-@media (min-width: 575px) {
+@media (min-width: 775px) {
   .transportPage {
-
-
     .tab-content {
       .tab-pane{
         &-content {
@@ -190,7 +205,7 @@
 }
 
 
-@media (max-width: 575px) {
+@media (max-width: 775px) {
   .transportPage {
 
     .container {
@@ -273,5 +288,4 @@
     }
   }
 }
-
 

@@ -1,3 +1,6 @@
+
+const btn = document.querySelector(".testBtn")
+
 var thumb = new Swiper(".test", {
     spaceBetween: 10,
     slidesPerGroup: 1,
@@ -13,31 +16,6 @@ var thumb = new Swiper(".test", {
     }
 });
 
-// var swiper = new Swiper(".mySwiper", {
-//     spaceBetween: 10,
-//     navigation: {
-//         nextEl: ".swiper-prev",
-//         prevEl: ".swiper-next",
-//     },
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
-//     centeredSlides: true,
-//     slidesPerView: 'auto',
-//     autoHeight: true,
-//     effect: "slide",
-//     breakpoints: {
-//         750: {
-//             loop: true,
-//             effect: "fade",
-//             pagination: false,
-//             slidesPerView: 1,
-//             centeredSlides: false,
-//             autoHeight: false,
-//         },
-//
-//     }
-// });
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
@@ -45,7 +23,7 @@ var swiper = new Swiper(".mySwiper", {
         swiper: thumb,
     },
     breakpoints: {
-        750: {
+        900: {
             allowTouchMove: false,
             effect: "fade",
             loop: true,
@@ -58,7 +36,6 @@ var swiper = new Swiper(".mySwiper", {
                 swiper: thumb,
             },
         },
-
         1: {
             allowTouchMove: true,
             effect: "slide",
@@ -79,9 +56,6 @@ swiper.on("slideChange", function () {
 
     thumb.slideToLoop(activeSlideIndex, 300, false);
 });
-
-
-
 
 
 
