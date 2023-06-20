@@ -3358,7 +3358,7 @@ textarea {
   left: 43px;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1170px) {
   .header-content {
     border-left: 1px solid rgba(46, 49, 56, 0.12);
   }
@@ -3492,6 +3492,26 @@ textarea {
   }
 }
 @media (max-width: 1300px) {
+  .header {
+    padding: 0 20px 0 20px;
+  }
+  .header-logo {
+    padding: 0 20px 0 0;
+  }
+  .header-content-menu .levelOne-li-btn {
+    padding: 0 12px 0 20px;
+  }
+  .header-content .dropdown {
+    margin-right: 20px;
+  }
+  .header-content .desktop-btn {
+    padding: 17px 24px 17px 24px;
+  }
+  .header-content .desktop-btn:after {
+    content: unset;
+  }
+}
+@media (max-width: 1170px) {
   .header {
     padding: 0 10px 0 20px;
   }
